@@ -1,0 +1,1061 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: belnr
+    type: string
+    nullable: true
+    metadata:
+      description: Document number
+      mappings: []
+      tags: []
+  - name: gjahr
+    type: string
+    nullable: true
+    metadata:
+      description: Fiscal year
+      mappings: []
+      tags: []
+  - name: mandt
+    type: string
+    nullable: true
+    metadata:
+      description: Client ID
+      mappings: []
+      tags: []
+  - name: ctxkrs
+    type: decimal(9,5)
+    nullable: true
+    metadata:
+      description: Currency exchange rate
+      mappings: []
+      tags: []
+  - name: makzn
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount in local currency
+      mappings: []
+      tags: []
+  - name: lotkz
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for batch management
+      mappings: []
+      tags: []
+  - name: fityp
+    type: string
+    nullable: true
+    metadata:
+      description: Type of financial document
+      mappings: []
+      tags: []
+  - name: ort01
+    type: string
+    nullable: true
+    metadata:
+      description: Location or address
+      mappings: []
+      tags: []
+  - name: pfach
+    type: string
+    nullable: true
+    metadata:
+      description: P.O. Box or mailbox number
+      mappings: []
+      tags: []
+  - name: budat
+    type: string
+    nullable: true
+    metadata:
+      description: Posting date of the document
+      mappings: []
+      tags: []
+  - name: beznk
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount in local currency
+      mappings: []
+      tags: []
+  - name: brnch
+    type: string
+    nullable: true
+    metadata:
+      description: Branch code or identifier
+      mappings: []
+      tags: []
+  - name: stjah
+    type: string
+    nullable: true
+    metadata:
+      description: Fiscal year
+      mappings: []
+      tags: []
+  - name: cputm
+    type: string
+    nullable: true
+    metadata:
+      description: Time of creation or update
+      mappings: []
+      tags: []
+  - name: kursx
+    type: decimal(28,14)
+    nullable: true
+    metadata:
+      description: Exchange rate
+      mappings: []
+      tags: []
+  - name: txjcd_bnk
+    type: string
+    nullable: true
+    metadata:
+      description: Bank transaction code
+      mappings: []
+      tags: []
+  - name: copy_user
+    type: string
+    nullable: true
+    metadata:
+      description: User who performed the copy operation
+      mappings: []
+      tags: []
+  - name: stkzn
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for stock transfer
+      mappings: []
+      tags: []
+  - name: pstlz
+    type: string
+    nullable: true
+    metadata:
+      description: Postal code
+      mappings: []
+      tags: []
+  - name: xcpdk
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for cross-company code posting
+      mappings: []
+      tags: []
+  - name: inv_tran
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for inventory transaction
+      mappings: []
+      tags: []
+  - name: secco
+    type: string
+    nullable: true
+    metadata:
+      description: Secondary cost collector
+      mappings: []
+      tags: []
+  - name: fdtag
+    type: string
+    nullable: true
+    metadata:
+      description: Fixed asset tag number
+      mappings: []
+      tags: []
+  - name: xegdr
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for reversal document
+      mappings: []
+      tags: []
+  - name: fdlev
+    type: string
+    nullable: true
+    metadata:
+      description: Fixed asset level
+      mappings: []
+      tags: []
+  - name: assign_next_date
+    type: string
+    nullable: true
+    metadata:
+      description: Next date for assignment
+      mappings: []
+      tags: []
+  - name: prepay_status
+    type: string
+    nullable: true
+    metadata:
+      description: Status of prepayment
+      mappings: []
+      tags: []
+  - name: xblnr
+    type: string
+    nullable: true
+    metadata:
+      description: Reference document number
+      mappings: []
+      tags: []
+  - name: xinve
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for investment
+      mappings: []
+      tags: []
+  - name: kursf
+    type: decimal(9,5)
+    nullable: true
+    metadata:
+      description: Exchange rate
+      mappings: []
+      tags: []
+  - name: qsshb
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount of prepayment
+      mappings: []
+      tags: []
+  - name: prepay_awkey
+    type: string
+    nullable: true
+    metadata:
+      description: Key for prepayment
+      mappings: []
+      tags: []
+  - name: name3
+    type: string
+    nullable: true
+    metadata:
+      description: Third name field
+      mappings: []
+      tags: []
+  - name: uzawe
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for special payment method
+      mappings: []
+      tags: []
+  - name: lieffn
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount of delivery costs
+      mappings: []
+      tags: []
+  - name: xrech
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for reconciliation
+      mappings: []
+      tags: []
+  - name: copy_by_year
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for copying by year
+      mappings: []
+      tags: []
+  - name: rmwwr
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount in local currency
+      mappings: []
+      tags: []
+  - name: lifnr
+    type: string
+    nullable: true
+    metadata:
+      description: Vendor number
+      mappings: []
+      tags: []
+  - name: xmwst
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for tax
+      mappings: []
+      tags: []
+  - name: mwskz_bnk
+    type: string
+    nullable: true
+    metadata:
+      description: Tax code for bank transactions
+      mappings: []
+      tags: []
+  - name: bupla
+    type: string
+    nullable: true
+    metadata:
+      description: Business place for the transaction
+      mappings: []
+      tags: []
+  - name: bvtyp
+    type: string
+    nullable: true
+    metadata:
+      description: Transaction type for bank transactions
+      mappings: []
+      tags: []
+  - name: txkrs
+    type: decimal(9,5)
+    nullable: true
+    metadata:
+      description: Exchange rate for the transaction
+      mappings: []
+      tags: []
+  - name: qsfbt
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount in transaction currency
+      mappings: []
+      tags: []
+  - name: knumvl
+    type: string
+    nullable: true
+    metadata:
+      description: Key number for the assignment
+      mappings: []
+      tags: []
+  - name: assign_end_date
+    type: string
+    nullable: true
+    metadata:
+      description: End date of the assignment
+      mappings: []
+      tags: []
+  - name: xautakz
+    type: string
+    nullable: true
+    metadata:
+      description: Authorization indicator
+      mappings: []
+      tags: []
+  - name: wwert
+    type: string
+    nullable: true
+    metadata:
+      description: Value of the transaction
+      mappings: []
+      tags: []
+  - name: bukrs
+    type: string
+    nullable: true
+    metadata:
+      description: Company code
+      mappings: []
+      tags: []
+  - name: copy_to_belnr
+    type: string
+    nullable: true
+    metadata:
+      description: The target document number for copying
+      mappings: []
+      tags: []
+  - name: wmwst2
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount of tax in local currency
+      mappings: []
+      tags: []
+  - name: zlspr
+    type: string
+    nullable: true
+    metadata:
+      description: Payment method
+      mappings: []
+      tags: []
+  - name: esrre
+    type: string
+    nullable: true
+    metadata:
+      description: ESR reference number
+      mappings: []
+      tags: []
+  - name: wskto
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Account number for cash discount
+      mappings: []
+      tags: []
+  - name: stceg
+    type: string
+    nullable: true
+    metadata:
+      description: VAT registration number
+      mappings: []
+      tags: []
+  - name: stras
+    type: string
+    nullable: true
+    metadata:
+      description: Street address
+      mappings: []
+      tags: []
+  - name: cpudt
+    type: string
+    nullable: true
+    metadata:
+      description: Date of last change
+      mappings: []
+      tags: []
+  - name: filkd
+    type: string
+    nullable: true
+    metadata:
+      description: Billing document type
+      mappings: []
+      tags: []
+  - name: zuonr
+    type: string
+    nullable: true
+    metadata:
+      description: Assignment number
+      mappings: []
+      tags: []
+  - name: frgkz
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for foreign trade
+      mappings: []
+      tags: []
+  - name: egmld
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for electronic data interchange
+      mappings: []
+      tags: []
+  - name: rebzj
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for withholding tax
+      mappings: []
+      tags: []
+  - name: qsskz
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for special G/L transaction
+      mappings: []
+      tags: []
+  - name: zfbdt
+    type: string
+    nullable: true
+    metadata:
+      description: Payment reference date
+      mappings: []
+      tags: []
+  - name: j_1kftind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for special tax treatment
+      mappings: []
+      tags: []
+  - name: rebzg
+    type: string
+    nullable: true
+    metadata:
+      description: Document number of the invoice
+      mappings: []
+      tags: []
+  - name: landl
+    type: string
+    nullable: true
+    metadata:
+      description: Country key
+      mappings: []
+      tags: []
+  - name: reindat
+    type: string
+    nullable: true
+    metadata:
+      description: Date of the invoice
+      mappings: []
+      tags: []
+  - name: ivtyp
+    type: string
+    nullable: true
+    metadata:
+      description: Invoice type
+      mappings: []
+      tags: []
+  - name: j_1kftbus
+    type: string
+    nullable: true
+    metadata:
+      description: Business area code
+      mappings: []
+      tags: []
+  - name: regio
+    type: string
+    nullable: true
+    metadata:
+      description: Region code
+      mappings: []
+      tags: []
+  - name: zbd3t
+    type: decimal(3,0)
+    nullable: true
+    metadata:
+      description: Indicator for third party payment
+      mappings: []
+      tags: []
+  - name: j_1tpbupl
+    type: string
+    nullable: true
+    metadata:
+      description: Special G/L indicator
+      mappings: []
+      tags: []
+  - name: wmwst1
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Tax base amount
+      mappings: []
+      tags: []
+  - name: dtaws
+    type: string
+    nullable: true
+    metadata:
+      description: Date of the transaction
+      mappings: []
+      tags: []
+  - name: kidno
+    type: string
+    nullable: true
+    metadata:
+      description: Customer identification number
+      mappings: []
+      tags: []
+  - name: vgart
+    type: string
+    nullable: true
+    metadata:
+      description: Type of transaction
+      mappings: []
+      tags: []
+  - name: zbd2t
+    type: decimal(3,0)
+    nullable: true
+    metadata:
+      description: Number of days for payment terms
+      mappings: []
+      tags: []
+  - name: vatdate
+    type: string
+    nullable: true
+    metadata:
+      description: Date of VAT calculation
+      mappings: []
+      tags: []
+  - name: blart
+    type: string
+    nullable: true
+    metadata:
+      description: Document type
+      mappings: []
+      tags: []
+  - name: name2
+    type: string
+    nullable: true
+    metadata:
+      description: Second name
+      mappings: []
+      tags: []
+  - name: j_1kfrepre
+    type: string
+    nullable: true
+    metadata:
+      description: Representative for withholding tax
+      mappings: []
+      tags: []
+  - name: knumve
+    type: string
+    nullable: true
+    metadata:
+      description: Vendor account number
+      mappings: []
+      tags: []
+  - name: stcd4
+    type: string
+    nullable: true
+    metadata:
+      description: Tax number 4
+      mappings: []
+      tags: []
+  - name: stcdt
+    type: string
+    nullable: true
+    metadata:
+      description: Tax registration number date
+      mappings: []
+      tags: []
+  - name: lzbkz
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for payment method
+      mappings: []
+      tags: []
+  - name: logsys
+    type: string
+    nullable: true
+    metadata:
+      description: Logical system
+      mappings: []
+      tags: []
+  - name: pskto
+    type: string
+    nullable: true
+    metadata:
+      description: Payment block key
+      mappings: []
+      tags: []
+  - name: zbd2p
+    type: decimal(5,3)
+    nullable: true
+    metadata:
+      description: Percentage of discount 2
+      mappings: []
+      tags: []
+  - name: stcd2
+    type: string
+    nullable: true
+    metadata:
+      description: Tax number 2
+      mappings: []
+      tags: []
+  - name: esrnr
+    type: string
+    nullable: true
+    metadata:
+      description: ESR reference number
+      mappings: []
+      tags: []
+  - name: makzmw
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount in foreign currency
+      mappings: []
+      tags: []
+  - name: arkuen
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount in local currency
+      mappings: []
+      tags: []
+  - name: stblg
+    type: string
+    nullable: true
+    metadata:
+      description: Reference document number
+      mappings: []
+      tags: []
+  - name: zbd1t
+    type: decimal(3,0)
+    nullable: true
+    metadata:
+      description: Value of ZBD1T
+      mappings: []
+      tags: []
+  - name: xref3
+    type: string
+    nullable: true
+    metadata:
+      description: Value of XREF3
+      mappings: []
+      tags: []
+  - name: zbd1p
+    type: decimal(5,3)
+    nullable: true
+    metadata:
+      description: Value of ZBD1P
+      mappings: []
+      tags: []
+  - name: ername
+    type: string
+    nullable: true
+    metadata:
+      description: Value of ERNAME
+      mappings: []
+      tags: []
+  - name: lieffmw
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Value of LIEFFMW
+      mappings: []
+      tags: []
+  - name: copy_to_year
+    type: string
+    nullable: true
+    metadata:
+      description: Year to which the data is copied
+      mappings: []
+      tags: []
+  - name: spras
+    type: string
+    nullable: true
+    metadata:
+      description: Language key
+      mappings: []
+      tags: []
+  - name: xrbtx
+    type: string
+    nullable: true
+    metadata:
+      description: Text for the reference document
+      mappings: []
+      tags: []
+  - name: bankl
+    type: string
+    nullable: true
+    metadata:
+      description: Bank key
+      mappings: []
+      tags: []
+  - name: stkzu
+    type: string
+    nullable: true
+    metadata:
+      description: Special G/L Indicator
+      mappings: []
+      tags: []
+  - name: zlsch
+    type: string
+    nullable: true
+    metadata:
+      description: Payment method code
+      mappings: []
+      tags: []
+  - name: hbkid
+    type: string
+    nullable: true
+    metadata:
+      description: House bank ID
+      mappings: []
+      tags: []
+  - name: empfg
+    type: string
+    nullable: true
+    metadata:
+      description: Employee group
+      mappings: []
+      tags: []
+  - name: mwskz2
+    type: string
+    nullable: true
+    metadata:
+      description: Tax code 2
+      mappings: []
+      tags: []
+  - name: bkont
+    type: string
+    nullable: true
+    metadata:
+      description: Bank account number
+      mappings: []
+      tags: []
+  - name: j_1bnftype
+    type: string
+    nullable: true
+    metadata:
+      description: Type of business partner
+      mappings: []
+      tags: []
+  - name: repart
+    type: string
+    nullable: true
+    metadata:
+      description: Repartition indicator
+      mappings: []
+      tags: []
+  - name: saprl
+    type: string
+    nullable: true
+    metadata:
+      description: SAP Release
+      mappings: []
+      tags: []
+  - name: assign_status
+    type: string
+    nullable: true
+    metadata:
+      description: Assignment status
+      mappings: []
+      tags: []
+  - name: usnam
+    type: string
+    nullable: true
+    metadata:
+      description: Username
+      mappings: []
+      tags: []
+  - name: erfpr
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for the type of document
+      mappings: []
+      tags: []
+  - name: arkuemw
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount in document currency
+      mappings: []
+      tags: []
+  - name: bldat
+    type: string
+    nullable: true
+    metadata:
+      description: Document Date
+      mappings: []
+      tags: []
+  - name: stkza
+    type: string
+    nullable: true
+    metadata:
+      description: Account number
+      mappings: []
+      tags: []
+  - name: gsber
+    type: string
+    nullable: true
+    metadata:
+      description: Business Area
+      mappings: []
+      tags: []
+  - name: bankn
+    type: string
+    nullable: true
+    metadata:
+      description: Bank account number
+      mappings: []
+      tags: []
+  - name: stcd1
+    type: string
+    nullable: true
+    metadata:
+      description: Tax number
+      mappings: []
+      tags: []
+  - name: zbfix
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for fixed asset
+      mappings: []
+      tags: []
+  - name: name1
+    type: string
+    nullable: true
+    metadata:
+      description: Name of the entity
+      mappings: []
+      tags: []
+  - name: zterm
+    type: string
+    nullable: true
+    metadata:
+      description: Payment terms
+      mappings: []
+      tags: []
+  - name: empfb
+    type: string
+    nullable: true
+    metadata:
+      description: Employee feedback indicator
+      mappings: []
+      tags: []
+  - name: diekz
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for cash discount
+      mappings: []
+      tags: []
+  - name: rbstat
+    type: string
+    nullable: true
+    metadata:
+      description: Rebate status
+      mappings: []
+      tags: []
+  - name: pstl2
+    type: string
+    nullable: true
+    metadata:
+      description: Postal code 2
+      mappings: []
+      tags: []
+  - name: bktxt
+    type: string
+    nullable: true
+    metadata:
+      description: Document header text
+      mappings: []
+      tags: []
+  - name: anred
+    type: string
+    nullable: true
+    metadata:
+      description: Salutation of the person
+      mappings: []
+      tags: []
+  - name: mwskz1
+    type: string
+    nullable: true
+    metadata:
+      description: Tax code for the transaction
+      mappings: []
+      tags: []
+  - name: tcode
+    type: string
+    nullable: true
+    metadata:
+      description: Transaction code associated with the entry
+      mappings: []
+      tags: []
+  - name: copy_by_belnr
+    type: string
+    nullable: true
+    metadata:
+      description: Copy of the entry made by the document number
+      mappings: []
+      tags: []
+  - name: stcd3
+    type: string
+    nullable: true
+    metadata:
+      description: Tax number of the third party involved
+      mappings: []
+      tags: []
+  - name: hkont
+    type: string
+    nullable: true
+    metadata:
+      description: Account number
+      mappings: []
+      tags: []
+  - name: name4
+    type: string
+    nullable: true
+    metadata:
+      description: Fourth line of the name
+      mappings: []
+      tags: []
+  - name: esrpz
+    type: string
+    nullable: true
+    metadata:
+      description: Payment reference
+      mappings: []
+      tags: []
+  - name: dtams
+    type: string
+    nullable: true
+    metadata:
+      description: Amount in local currency
+      mappings: []
+      tags: []
+  - name: erfnam
+    type: string
+    nullable: true
+    metadata:
+      description: Name of the person who created the entry
+      mappings: []
+      tags: []
+  - name: bkref
+    type: string
+    nullable: true
+    metadata:
+      description: Bank reference number
+      mappings: []
+      tags: []
+  - name: banks
+    type: string
+    nullable: true
+    metadata:
+      description: Bank name
+      mappings: []
+      tags: []
+  - name: waers
+    type: string
+    nullable: true
+    metadata:
+      description: Currency code
+      mappings: []
+      tags: []
+  - name: land1
+    type: string
+    nullable: true
+    metadata:
+      description: Country code
+      mappings: []
+      tags: []
+  - name: sgtxt
+    type: string
+    nullable: true
+    metadata:
+      description: Text description
+      mappings: []
+      tags: []
+  - name: _fivetran_deleted
+    type: boolean
+    nullable: true
+    metadata:
+      description: Flag indicating if the record has been deleted
+      mappings: []
+      tags: []
+  - name: _fivetran_synced
+    type: timestamp
+    nullable: true
+    metadata:
+      description: Timestamp indicating when the record was last synced
+      mappings: []
+      tags: []
+  - name: hvr_is_deleted
+    type: integer
+    nullable: true
+    metadata:
+      description: Flag indicating if the record has been deleted in HVR
+      mappings: []
+      tags: []
+  - name: hvr_change_time
+    type: timestamp
+    nullable: true
+    metadata:
+      description: Timestamp indicating when the record was last changed in HVR
+      mappings: []
+      tags: []
+  - name: repl_cap_tstamp
+    type: timestamp
+    nullable: true
+    metadata:
+      description: Timestamp indicating when the record was captured for replication
+      mappings: []
+      tags: []
+  - name: repl_cap_user
+    type: string
+    nullable: true
+    metadata:
+      description: The user who captured the replication change
+      mappings: []
+      tags: []

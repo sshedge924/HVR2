@@ -1,0 +1,747 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: doc_number
+    type: string
+    nullable: true
+    metadata:
+      description: Document number
+      mappings: []
+      tags: []
+  - name: line_item_num
+    type: string
+    nullable: true
+    metadata:
+      description: Line item number
+      mappings: []
+      tags: []
+  - name: fiscal_year
+    type: string
+    nullable: true
+    metadata:
+      description: Fiscal year
+      mappings: []
+      tags: []
+  - name: client_num
+    type: string
+    nullable: true
+    metadata:
+      description: Client ID
+      mappings: []
+      tags: []
+  - name: reversal_doc_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for special G/L transaction
+      mappings: []
+      tags: []
+  - name: debit_credit_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for debit or credit transaction
+      mappings: []
+      tags: []
+  - name: bal_amt_aftertrans
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Balance amount after transaction
+      mappings: []
+      tags: []
+  - name: tran_theme
+    type: string
+    nullable: true
+    metadata:
+      description: Theme associated with the transaction
+      mappings: []
+      tags: []
+  - name: tran_acc_class
+    type: string
+    nullable: true
+    metadata:
+      description: Accounting class of the transaction
+      mappings: []
+      tags: []
+  - name: cum_tran_amt
+    type: decimal(13,3)
+    nullable: true
+    metadata:
+      description: Cumulative transaction amount
+      mappings: []
+      tags: []
+  - name: wrf_characterustic1
+    type: string
+    nullable: true
+    metadata:
+      description: Characteristic 1 of the WRF
+      mappings: []
+      tags: []
+  - name: item_material_num
+    type: string
+    nullable: true
+    metadata:
+      description: Material number of the item
+      mappings: []
+      tags: []
+  - name: purch_ord_item_num
+    type: string
+    nullable: true
+    metadata:
+      description: Item number of the purchase order
+      mappings: []
+      tags: []
+  - name: item_quantity
+    type: decimal(13,3)
+    nullable: true
+    metadata:
+      description: Quantity of the item
+      mappings: []
+      tags: []
+  - name: recon_account
+    type: string
+    nullable: true
+    metadata:
+      description: Reconciliation account
+      mappings: []
+      tags: []
+  - name: stock_move_post_key
+    type: string
+    nullable: true
+    metadata:
+      description: Posting key for stock movement
+      mappings: []
+      tags: []
+  - name: stock_move_post_amt
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount posted for stock movement (per piece)
+      mappings: []
+      tags: []
+  - name: spl_gl_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Special G/L Indicator
+      mappings: []
+      tags: []
+  - name: condition_type
+    type: string
+    nullable: true
+    metadata:
+      description: Condition Type
+      mappings: []
+      tags: []
+  - name: bank_charges_post_amt
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount posted for bank charges
+      mappings: []
+      tags: []
+  - name: del_note_ref_num
+    type: string
+    nullable: true
+    metadata:
+      description: Reference number for the delivery note
+      mappings: []
+      tags: []
+  - name: doc_post_period
+    type: string
+    nullable: true
+    metadata:
+      description: Business transaction type
+      mappings: []
+      tags: []
+  - name: doc_fiscal_year
+    type: string
+    nullable: true
+    metadata:
+      description: Fiscal year of the document
+      mappings: []
+      tags: []
+  - name: vendor_number
+    type: string
+    nullable: true
+    metadata:
+      description: Vendor number
+      mappings: []
+      tags: []
+  - name: srv_map_key
+    type: string
+    nullable: true
+    metadata:
+      description: Service mapping key
+      mappings: []
+      tags: []
+  - name: tran_status_num_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Number indicating the status of the transaction
+      mappings: []
+      tags: []
+  - name: return_due_date
+    type: string
+    nullable: true
+    metadata:
+      description: Due date for return
+      mappings: []
+      tags: []
+  - name: subseg_cat
+    type: string
+    nullable: true
+    metadata:
+      description: Category of the subsegment
+      mappings: []
+      tags: []
+  - name: local_curr_ret_amt
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount in local currency
+      mappings: []
+      tags: []
+  - name: srm_contract_item_num
+    type: string
+    nullable: true
+    metadata:
+      description: Item number of the SRM contract
+      mappings: []
+      tags: []
+  - name: record_plant_code
+    type: string
+    nullable: true
+    metadata:
+      description: Plant code indicating the location
+      mappings: []
+      tags: []
+  - name: purchase_ord_num
+    type: string
+    nullable: true
+    metadata:
+      description: Purchase order number
+      mappings: []
+      tags: []
+  - name: erp_contract_id
+    type: string
+    nullable: true
+    metadata:
+      description: ID of the ERP contract
+      mappings: []
+      tags: []
+  - name: record_group_code
+    type: string
+    nullable: true
+    metadata:
+      description: Grouping key for special stocks
+      mappings: []
+      tags: []
+  - name: record_company_code
+    type: string
+    nullable: true
+    metadata:
+      description: Company code
+      mappings: []
+      tags: []
+  - name: spl_gl_tran_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for special G/L transaction
+      mappings: []
+      tags: []
+  - name: purch_doc_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Special G/L transaction type
+      mappings: []
+      tags: []
+  - name: spl_stock_reason
+    type: string
+    nullable: true
+    metadata:
+      description: Reason for special G/L transaction
+      mappings: []
+      tags: []
+  - name: batch_num
+    type: string
+    nullable: true
+    metadata:
+      description: Batch number for the material
+      mappings: []
+      tags: []
+  - name: del_item_num
+    type: string
+    nullable: true
+    metadata:
+      description: Delivery item number
+      mappings: []
+      tags: []
+  - name: spl_grp_code
+    type: string
+    nullable: true
+    metadata:
+      description: Special Group Code
+      mappings: []
+      tags: []
+  - name: package_num
+    type: string
+    nullable: true
+    metadata:
+      description: Package Number
+      mappings: []
+      tags: []
+  - name: warehouse_receipt
+    type: string
+    nullable: true
+    metadata:
+      description: Warehouse Receipt
+      mappings: []
+      tags: []
+  - name: bus_proc_ref
+    type: decimal(13,3)
+    nullable: true
+    metadata:
+      description: Business Process Reference
+      mappings: []
+      tags: []
+  - name: valuation_type
+    type: string
+    nullable: true
+    metadata:
+      description: Valuation Type
+      mappings: []
+      tags: []
+  - name: posting_type
+    type: string
+    nullable: true
+    metadata:
+      description: Posting type
+      mappings: []
+      tags: []
+  - name: tax_relevance_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for tax relevance
+      mappings: []
+      tags: []
+  - name: life_valuation_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for LIFO valuation
+      mappings: []
+      tags: []
+  - name: del_billing_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for error in delivery
+      mappings: []
+      tags: []
+  - name: special_gl_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Special G/L indicator
+      mappings: []
+      tags: []
+  - name: fasion_season_year
+    type: string
+    nullable: true
+    metadata:
+      description: The year of the fashion season
+      mappings: []
+      tags: []
+  - name: supp_rel_contract_id
+    type: string
+    nullable: true
+    metadata:
+      description: The ID of the SRM contract
+      mappings: []
+      tags: []
+  - name: spl_proc_key_grp
+    type: string
+    nullable: true
+    metadata:
+      description: The grouping of the special procurement key
+      mappings: []
+      tags: []
+  - name: diff_amount
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: The difference amount
+      mappings: []
+      tags: []
+  - name: mat_spl_proc_key
+    type: string
+    nullable: true
+    metadata:
+      description: The special procurement key
+      mappings: []
+      tags: []
+  - name: wrf_charsteristic3
+    type: string
+    nullable: true
+    metadata:
+      description: Characteristic 3 of the WRF
+      mappings: []
+      tags: []
+  - name: company_code
+    type: string
+    nullable: true
+    metadata:
+      description: Company code
+      mappings: []
+      tags: []
+  - name: cum_quantity
+    type: decimal(13,3)
+    nullable: true
+    metadata:
+      description: Cumulative quantity
+      mappings: []
+      tags: []
+  - name: inventory_rel_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Inventory relevance indicator
+      mappings: []
+      tags: []
+  - name: purch_document_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for special stock
+      mappings: []
+      tags: []
+  - name: stock_post_amt_prevyear
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Posting amount for stock in the previous year
+      mappings: []
+      tags: []
+  - name: cont_post_type
+    type: string
+    nullable: true
+    metadata:
+      description: Contract posting type
+      mappings: []
+      tags: []
+  - name: local_curr_amt
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Amount in local currency
+      mappings: []
+      tags: []
+  - name: post_description
+    type: string
+    nullable: true
+    metadata:
+      description: Text description of the transaction
+      mappings: []
+      tags: []
+  - name: stock_posting_amt
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Posting amount for stock
+      mappings: []
+      tags: []
+  - name: special_group_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for special group
+      mappings: []
+      tags: []
+  - name: invoice_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for cross-divisional invoice
+      mappings: []
+      tags: []
+  - name: sales_value
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Value of material sales
+      mappings: []
+      tags: []
+  - name: spl_grp_indicator
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for special group
+      mappings: []
+      tags: []
+  - name: goods_invrecpt_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for goods receipt, invoice receipt, and goods receipt
+        blocked
+      mappings: []
+      tags: []
+  - name: rev_goods_move_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for reversal of a document
+      mappings: []
+      tags: []
+  - name: qty_goods_intrans
+    type: decimal(13,3)
+    nullable: true
+    metadata:
+      description: Quantity of goods or services in the document
+      mappings: []
+      tags: []
+  - name: goods_move_type
+    type: string
+    nullable: true
+    metadata:
+      description: Type of goods issue
+      mappings: []
+      tags: []
+  - name: complaint_reason
+    type: string
+    nullable: true
+    metadata:
+      description: Reason for complaint
+      mappings: []
+      tags: []
+  - name: hist_material_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for historical material
+      mappings: []
+      tags: []
+  - name: complaint_reason_num
+    type: string
+    nullable: true
+    metadata:
+      description: Sequential number for the item
+      mappings: []
+      tags: []
+  - name: item_unit_of_measure
+    type: string
+    nullable: true
+    metadata:
+      description: Unit of measure for the item
+      mappings: []
+      tags: []
+  - name: inv_item_origin
+    type: string
+    nullable: true
+    metadata:
+      description: Origin of the inventory item
+      mappings: []
+      tags: []
+  - name: cross_comp_post_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for cross-company code posting
+      mappings: []
+      tags: []
+  - name: license_no_item
+    type: string
+    nullable: true
+    metadata:
+      description: License number associated with the item
+      mappings: []
+      tags: []
+  - name: ext_spl_purpose_group
+    type: string
+    nullable: true
+    metadata:
+      description: Extended Special Purpose Group
+      mappings: []
+      tags: []
+  - name: wrf_characteristic2
+    type: string
+    nullable: true
+    metadata:
+      description: Characteristic 2 of the WRF
+      mappings: []
+      tags: []
+  - name: material_number
+    type: string
+    nullable: true
+    metadata:
+      description: Material Number
+      mappings: []
+      tags: []
+  - name: internal_row_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for Internal Row
+      mappings: []
+      tags: []
+  - name: basic_unit_of_measure
+    type: string
+    nullable: true
+    metadata:
+      description: Base Unit of Measure
+      mappings: []
+      tags: []
+  - name: grp_ofitems_code_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Group identification code
+      mappings: []
+      tags: []
+  - name: fashion_season
+    type: string
+    nullable: true
+    metadata:
+      description: Season associated with the transaction
+      mappings: []
+      tags: []
+  - name: item_reference_num
+    type: string
+    nullable: true
+    metadata:
+      description: Reference document number
+      mappings: []
+      tags: []
+  - name: item_spl_handling_ind
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for special G/L transaction
+      mappings: []
+      tags: []
+  - name: item_quant
+    type: decimal(13,3)
+    nullable: true
+    metadata:
+      description: Quantity of the transaction
+      mappings: []
+      tags: []
+  - name: percent_ret_amt
+    type: decimal(5,2)
+    nullable: true
+    metadata:
+      description: Percentage of return amount
+      mappings: []
+      tags: []
+  - name: line_item_no
+    type: string
+    nullable: true
+    metadata:
+      description: Line item number
+      mappings: []
+      tags: []
+  - name: taxation_code
+    type: string
+    nullable: true
+    metadata:
+      description: Tax code
+      mappings: []
+      tags: []
+  - name: fasion_collection
+    type: string
+    nullable: true
+    metadata:
+      description: Collection associated with the item
+      mappings: []
+      tags: []
+  - name: spl_numbering_counter
+    type: string
+    nullable: true
+    metadata:
+      description: Counter for the item
+      mappings: []
+      tags: []
+  - name: rev_doc_indicator
+    type: string
+    nullable: true
+    metadata:
+      description: Indicator for reversal document
+      mappings: []
+      tags: []
+  - name: ref_doc_no
+    type: string
+    nullable: true
+    metadata:
+      description: Reference document number
+      mappings: []
+      tags: []
+  - name: erp_contract_item_num
+    type: string
+    nullable: true
+    metadata:
+      description: Item number of the ERP contract
+      mappings: []
+      tags: []
+  - name: ret_amt_for_curr
+    type: decimal(13,2)
+    nullable: true
+    metadata:
+      description: Returned amount in foreign currency
+      mappings: []
+      tags: []
+  - name: tax_juris_code
+    type: string
+    nullable: true
+    metadata:
+      description: Tax code
+      mappings: []
+      tags: []
+  - name: account_grp_key
+    type: string
+    nullable: true
+    metadata:
+      description: Account type
+      mappings: []
+      tags: []
+  - name: _fivetran_deleted
+    type: boolean
+    nullable: true
+    metadata:
+      description: Flag indicating if the record has been deleted
+      mappings: []
+      tags: []
+  - name: _fivetran_synced
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: _loadtimestamp
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: _filename
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: _file_timestamp
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

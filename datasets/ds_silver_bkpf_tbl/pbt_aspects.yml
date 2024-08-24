@@ -1,0 +1,109 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: doc_number
+    type: string
+    nullable: true
+    metadata:
+      description: Document number
+      mappings: []
+      tags: []
+  - name: user_name
+    type: string
+    nullable: true
+    metadata:
+      description: User name
+      mappings: []
+      tags: []
+  - name: company_code
+    type: string
+    nullable: true
+    metadata:
+      description: Company code
+      mappings: []
+      tags: []
+  - name: fiscal_year
+    type: string
+    nullable: true
+    metadata:
+      description: Fiscal year
+      mappings: []
+      tags: []
+  - name: client
+    type: string
+    nullable: true
+    metadata:
+      description: Client
+      mappings: []
+      tags: []
+  - name: ind_spl_post
+    type: string
+    nullable: true
+    metadata:
+      description: Value of basw3 field
+      mappings: []
+      tags: []
+  - name: doc_type
+    type: string
+    nullable: true
+    metadata:
+      description: Document type
+      mappings: []
+      tags: []
+  - name: curr_type2
+    type: string
+    nullable: true
+    metadata:
+      description: Currency type 2
+      mappings: []
+      tags: []
+  - name: tran_post_date
+    type: string
+    nullable: true
+    metadata:
+      description: Posting date of the entry
+      mappings: []
+      tags: []
+  - name: tran_curr_key
+    type: string
+    nullable: true
+    metadata:
+      description: Currency key for the transaction
+      mappings: []
+      tags: []
+  - name: post_date_month
+    type: string
+    nullable: true
+    metadata:
+      description: Posting period
+      mappings: []
+      tags: []
+  - name: doc_date
+    type: string
+    nullable: true
+    metadata:
+      description: Document Date
+      mappings: []
+      tags: []
+  - name: _fivetran_synced
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: _loadtimestamp
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: _filename
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

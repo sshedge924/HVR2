@@ -1,0 +1,67 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: doc_number
+    type: string
+    nullable: true
+    metadata:
+      description: Document number
+      mappings: []
+      tags: []
+  - name: fiscal_year
+    type: string
+    nullable: true
+    metadata:
+      description: Fiscal year
+      mappings: []
+      tags: []
+  - name: line_item_num
+    type: string
+    nullable: true
+    metadata:
+      description: Line item number
+      mappings: []
+      tags: []
+  - name: item_quant
+    type: decimal(13,3)
+    nullable: true
+    metadata:
+      description: Quantity of the transaction
+      mappings: []
+      tags: []
+  - name: record_plant_code
+    type: string
+    nullable: true
+    metadata:
+      description: Plant code indicating the location
+      mappings: []
+      tags: []
+  - name: purchase_ord_num
+    type: string
+    nullable: true
+    metadata:
+      description: Purchase order number
+      mappings: []
+      tags: []
+  - name: _fivetran_synced
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: _loadtimestamp
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: _filename
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
