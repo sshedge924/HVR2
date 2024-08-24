@@ -1,0 +1,5312 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "functions" : { },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.0.31",
+        "pyPiVersion" : "1.9.9"
+      }
+    },
+    "id" : "1",
+    "uri" : "pipelines/pl_sap_hvr_ingest",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "pl_sap_hvr_ingest",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true
+    },
+    "language" : "python",
+    "fabricId" : "10064",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "santoshcloudaeonnetteam.erphvrpoc2.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "pl_sap_hvr_ingest",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "SHhjAfs5jH4xFO-Q2dMxR",
+    "source" : "V5D5mY1Nn5gEgmkCA4lad$$4q3xJW3rciBmm5qyp33p0",
+    "sourcePort" : "hEAFCiP37qX1_I7vxWjrB$$3CXiZx90mnRxO1YpmKe4i",
+    "target" : "OeiOSxZujUEwy26RX1KTg$$2v2dkApvl_y-zAuiRr7yH",
+    "targetPort" : "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR"
+  }, {
+    "id" : "WeTpBeN70oZjRe-xRKDGc",
+    "source" : "HjswI4-uloHPBpDns-n3k$$gVRM3YFW2VGRQVzVUzREg",
+    "sourcePort" : "gim2JSadp1J8HmBempyiH$$QD87yqGpxEK3a0m6xdBqZ",
+    "target" : "-XDL08b8WRsbbNYOBBm5M$$a6K9Qj0ldocsj-uYKJyjo",
+    "targetPort" : "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp"
+  }, {
+    "id" : "X0YrOq0UGbo8CgIWues_P",
+    "source" : "7Lv5l0aXgMFYwDYmZAZq_$$FcDsFar_n0oB_QxCYK0mZ",
+    "sourcePort" : "EwMoAV8Ou-e6ZFmiJx2FR$$viBrj81pXWRI7PmnNZfqS",
+    "target" : "jEo5I-sq0bkE0C-2oInFk$$wilWEJioijwYXyVn1o13N",
+    "targetPort" : "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f"
+  }, {
+    "id" : "zhp19CCSYr4-b_MtVj4YN",
+    "source" : "vjxNvgOta3zrQGgt_boei$$kW0YjHGDcALBAvNVxDYk0",
+    "sourcePort" : "ywv54uVpbw8SgbgXgflTE$$jcU3x8178yn4DLwtDqD9C",
+    "target" : "k9QbxC-ZmlYSlQDNmji8b$$9hEccE6hj4Q0t3rWwMoNh",
+    "targetPort" : "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_"
+  }, {
+    "id" : "m9kVbB4HPLyEw4rapUM9_",
+    "source" : "66ov4IfT8-hpjdaoM9EKp$$dARJNFp237qJTtOm30Dz2",
+    "sourcePort" : "Dj4bqp_EqQnA-EekYjHz_$$qbkgJvXuk54m5t2wcFF8S",
+    "target" : "aF00isey0DXQK2Ow5ir8P$$oqnL7PuHBR1a0FsS2x7xj",
+    "targetPort" : "dseneYZh1-sgg-L-UD2xt$$Cjw3HFXmRj7FOOZziku-o"
+  }, {
+    "id" : "GqlY1pgV3rS2yUC8fLPzN",
+    "source" : "Ld8gScO_EdYXmjsmpbSex$$Gr4j_dPNLTen1gmCBxb0Z",
+    "sourcePort" : "A_gY-wedERYTBB5n03JYr$$Fbl1-LIrz0237Ubn9bYU8",
+    "target" : "VT26OoqeIUZJLE2IERfUz$$GHB_8zcGAqQoaUhqVaGcD",
+    "targetPort" : "ozUtxQLnABBda5PVmWkVW$$klGrXvYYoeGFxbVCkWFX2"
+  }, {
+    "id" : "_2dnP_57zchZJv-Ez_BfK",
+    "source" : "N3JwO7GUswgTzLUrJiozv$$BE3Dx8QSSTXnT0IKmA4uc",
+    "sourcePort" : "OJnypEFZZZ1a5VePNnL1k$$KM7scCV4RUPIUP1qT66gi",
+    "target" : "-Kqwq6b5I13yWFDjQrRFL$$X3nCRNORX_WB9UZazDxX9",
+    "targetPort" : "IE8GRJIrvulecG6obE9II$$xxUeUn9e7SHMLaDbd_FtF"
+  }, {
+    "id" : "BkAOrxqIxidd7Olr-x339",
+    "source" : "OeiOSxZujUEwy26RX1KTg$$2v2dkApvl_y-zAuiRr7yH",
+    "sourcePort" : "HbSSeSCBUD0oHGY9BeBUs$$yekTJ8SQaQDLlHmb1_QFz",
+    "target" : "N3JwO7GUswgTzLUrJiozv$$BE3Dx8QSSTXnT0IKmA4uc",
+    "targetPort" : "p83ZuvBXqtNoZMI-Ws2Ud$$-vNJJBfcUWtM1Tml_462a"
+  }, {
+    "id" : "4uFBmXDEXcyXubyI4FBSB",
+    "source" : "-XDL08b8WRsbbNYOBBm5M$$a6K9Qj0ldocsj-uYKJyjo",
+    "sourcePort" : "Bh_TfLsE88C2ED1Dh6-tw$$05hnQfTERiAkC4aHT6E3E",
+    "target" : "hMP_Tx9JKWKmdyjWAKSSi$$1WRxGK24JY-WT2HagrCN6",
+    "targetPort" : "R_shwunNbRVP1gjb5dvGx$$mxvyj7hGAXfemWqVyqWoo"
+  }, {
+    "id" : "bn3s1gl_8CibpftiCbUd6",
+    "source" : "hMP_Tx9JKWKmdyjWAKSSi$$1WRxGK24JY-WT2HagrCN6",
+    "sourcePort" : "6gs69sU4GbDFkhyZm9NYb$$xNBfXWsFywFtXGvDbvmtQ",
+    "target" : "3Fqf8aGPVIgmjGPo8juLL$$pDAYu6KqU9V5AQ0LqwyJm",
+    "targetPort" : "81Hivqo28P67xWE_w_Y4_$$hwQxpy7vyQ4HKz-vYridj"
+  }, {
+    "id" : "FTnSlUIzE8ubQAbc5bgkc",
+    "source" : "jEo5I-sq0bkE0C-2oInFk$$wilWEJioijwYXyVn1o13N",
+    "sourcePort" : "ZrOf0XwhHIvDqlsbtYj09$$hBkMaNQ7BC7LJFCSaG0T7",
+    "target" : "kxr4429f3r5ukH4Vb88LQ$$4n7bTTN1qtKSndf_6IDmz",
+    "targetPort" : "C0nQa1bdxUlYndruZf5r-$$kUpLK31G2tARMYPG5UBiY"
+  }, {
+    "id" : "gFVqTXp0d2tonFreLl6sc",
+    "source" : "kxr4429f3r5ukH4Vb88LQ$$4n7bTTN1qtKSndf_6IDmz",
+    "sourcePort" : "azm3AXTxCaf_5yWAMJeDd$$HRJ8NxO47wLMZUH9C9OeN",
+    "target" : "bNKRql9lyA7MRlkWzrjf1$$NT23d3mHNbbL_kiuBo3bW",
+    "targetPort" : "fD41iA3dsiS57fsffK8yf$$nWeUHh5OeC9xh6trf8usm"
+  }, {
+    "id" : "mzKhF3lfjsoYQJlTpZr4H",
+    "source" : "3TCdsP01qTbknmitSuiux$$WE_G8UFGY114KIazohgun",
+    "sourcePort" : "3DlE284J8IHFNxlZMCADk$$l4rEz2YSZ3tPwHbXaYKTG",
+    "target" : "OlAk7HtvIf0hX2e-BNRXG$$xVmR8MpmkrAPP3eHdkHTR",
+    "targetPort" : "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2"
+  }, {
+    "id" : "EvQXcco12f432kYGdVtOL",
+    "source" : "OlAk7HtvIf0hX2e-BNRXG$$xVmR8MpmkrAPP3eHdkHTR",
+    "sourcePort" : "kESLY4AcLOEeH5w6MX4SN$$RIxfErA3x2qJ16Nkd_wQe",
+    "target" : "DImNLRCivE_c8-guuELcY$$igD9Xb9qXYolLWvrWpKHR",
+    "targetPort" : "0KD7-23tMjdctlIJ6UUGy$$J2T4YVDo_XnUtiR9_y70q"
+  }, {
+    "id" : "CRc9c56Z0qO-UXhH994MW",
+    "source" : "DImNLRCivE_c8-guuELcY$$igD9Xb9qXYolLWvrWpKHR",
+    "sourcePort" : "mqARWFueNq0_x9UiZMk4S$$fMQcu_Gl6or4uRfXTAU5w",
+    "target" : "TP9pU5mhm23pwvnqFrAV8$$VoQ6viwQkay8ceBGno1_e",
+    "targetPort" : "Oqr-fUEskZVx66V8O_JZv$$k9fbuMLb7jKdnYfA8p93x"
+  }, {
+    "id" : "7Ao7JS-90qLWtZtu48UKn",
+    "source" : "k9QbxC-ZmlYSlQDNmji8b$$9hEccE6hj4Q0t3rWwMoNh",
+    "sourcePort" : "_2Ql_Y4lrlpQRzdFn2uUu$$ixP5UrC2efSlh-464U3Zh",
+    "target" : "KGM6vbv12vl3ZKuf3HHpa$$5g86Oq2nV4jZDUcEQXdL0",
+    "targetPort" : "rsGncOt8UMqMNI-4AZFnN$$y85pSXS6BS3URpzHcFA3m"
+  }, {
+    "id" : "l6aOi0Zqny-OJGrtrtG7L",
+    "source" : "KGM6vbv12vl3ZKuf3HHpa$$5g86Oq2nV4jZDUcEQXdL0",
+    "sourcePort" : "IysSw3lDmaGyBwqZxOCfF$$bS1OoT_jb-7k-Q5ssb97h",
+    "target" : "w3gc-83e7oZzLsbnhQNym$$Ey2DYuRpn5jCLPB8fy91B",
+    "targetPort" : "7x-K3qNlStvUt9WpDtwS9$$3jZWdY74OUogkC9dN7iaX"
+  }, {
+    "id" : "FAufnyfZxBXem-yBce3T-",
+    "source" : "hthIvP-YmciSQz6pFAJ89$$0KvLzMU6Yd4y-IlRdhH83",
+    "sourcePort" : "6LeF8l5NHbkN91qgTLSDX$$6a001C5divrKiEhpbQYqY",
+    "target" : "RtLWkoIwBEZS4LUqS-_4U$$PTxfRirWy-Q27oHwHxz6O",
+    "targetPort" : "d04BRu-hP4FLvFyDw3yxC$$7TWViRQcEJhBsJDW1BtD_"
+  }, {
+    "id" : "qD9qOoxYYnG55hlkQ_WGw",
+    "source" : "aF00isey0DXQK2Ow5ir8P$$oqnL7PuHBR1a0FsS2x7xj",
+    "sourcePort" : "31EvmfCD4Yl7p4aEkcV0L$$QekJ4qNISeZES56C2zE2R",
+    "target" : "hthIvP-YmciSQz6pFAJ89$$0KvLzMU6Yd4y-IlRdhH83",
+    "targetPort" : "fi1VXErnIgApBGbLohzHa$$LZ6rF8ctOlXRymroI2JEI"
+  }, {
+    "id" : "WbTTUYSnrwbuKa_Wa5zGm",
+    "source" : "zox3kS0lVqk4UR_BWk4v5$$zrcTxzPrutULZ0hnMIpMp",
+    "sourcePort" : "taG6q1ega34vZWy00c_8J$$_m-igddfqd-op8qx0k7GM",
+    "target" : "eEcLTBTpHaK6fhGcUAGj1$$MxaR2lAoYLt-A1xks-Alm",
+    "targetPort" : "Tv68pX5UWL4lBo8c85k2U$$xN0tA4ZvwPiuNNzNTM4A5"
+  }, {
+    "id" : "XYib2zhFTAXxDnXoR5uWh",
+    "source" : "Ld8gScO_EdYXmjsmpbSex$$Gr4j_dPNLTen1gmCBxb0Z",
+    "sourcePort" : "A_gY-wedERYTBB5n03JYr$$Fbl1-LIrz0237Ubn9bYU8",
+    "target" : "zox3kS0lVqk4UR_BWk4v5$$zrcTxzPrutULZ0hnMIpMp",
+    "targetPort" : "oaTLa_Zobtv_3Z99mOF7_$$yb3nXltZtpYF0TSm7SL19"
+  }, {
+    "id" : "ZR-oLMi0uzJLGAMEg24NS",
+    "source" : "cZr6XNqNqaMzYWVP8pF1r$$-sbT9TfvO2FIVELqo9OvU",
+    "sourcePort" : "O2-O5H5IAnjb6wa-Yjpg_$$6dV9fH6W2qkRo3vZD0KBi",
+    "target" : "Ld8gScO_EdYXmjsmpbSex$$Gr4j_dPNLTen1gmCBxb0Z",
+    "targetPort" : "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV"
+  }, {
+    "id" : "_UWp5yeWLgWo3CwC1YgMK",
+    "source" : "exsdmfp9tAEGnWdmAxRZ_$$58IJFIwwzugOOUUTsPuJ2",
+    "sourcePort" : "YCIWqIXOgfsnUIGzyJUFO$$jqzQb-lpg6z8cAkKn2bvL",
+    "target" : "Ld8gScO_EdYXmjsmpbSex$$Gr4j_dPNLTen1gmCBxb0Z",
+    "targetPort" : "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx"
+  }, {
+    "id" : "bMRtMaiwS6VmUeucbbDnh",
+    "source" : "4o8J3PPkJjNmxDlFjw6M1$$NxWS2qigsOjlW7MhVVR15",
+    "sourcePort" : "C5Nu1M6KAEOcFQk1c7uJI$$fqUmNb7Ua0Rb11etVcfOE",
+    "target" : "Ld8gScO_EdYXmjsmpbSex$$Gr4j_dPNLTen1gmCBxb0Z",
+    "targetPort" : "t-QJFkyTh_CAW4utcyNwk$$AALS0oU1uC8z6uDj1KrLh"
+  } ],
+  "processes" : {
+    "RtLWkoIwBEZS4LUqS-_4U$$PTxfRirWy-Q27oHwHxz6O" : {
+      "id" : "RtLWkoIwBEZS4LUqS-_4U$$PTxfRirWy-Q27oHwHxz6O",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_silver_rseg_tbl",
+        "slug" : "ds_silver_rseg_tbl",
+        "x" : -280,
+        "y" : 40,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the input DataFrame as a Delta table in the silver layer of the ERP data lake, specifically in the 'rseg_tbl' table.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "d04BRu-hP4FLvFyDw3yxC$$7TWViRQcEJhBsJDW1BtD_",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "3TCdsP01qTbknmitSuiux$$WE_G8UFGY114KIazohgun" : {
+      "id" : "3TCdsP01qTbknmitSuiux$$WE_G8UFGY114KIazohgun",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_bkpf_tbl_1",
+        "slug" : "ds_bkpf_tbl_1",
+        "x" : -740,
+        "y" : -280,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "3DlE284J8IHFNxlZMCADk$$l4rEz2YSZ3tPwHbXaYKTG",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "vjxNvgOta3zrQGgt_boei$$kW0YjHGDcALBAvNVxDYk0" : {
+      "id" : "vjxNvgOta3zrQGgt_boei$$kW0YjHGDcALBAvNVxDYk0",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_rbkp_tbl_1",
+        "slug" : "ds_rbkp_tbl_1",
+        "x" : -720,
+        "y" : -120,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ywv54uVpbw8SgbgXgflTE$$jcU3x8178yn4DLwtDqD9C",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "exsdmfp9tAEGnWdmAxRZ_$$58IJFIwwzugOOUUTsPuJ2" : {
+      "id" : "exsdmfp9tAEGnWdmAxRZ_$$58IJFIwwzugOOUUTsPuJ2",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_silver_rbkp_tbl_1",
+        "slug" : "ds_silver_rbkp_tbl_1",
+        "x" : -40,
+        "y" : -140,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "YCIWqIXOgfsnUIGzyJUFO$$jqzQb-lpg6z8cAkKn2bvL",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "OeiOSxZujUEwy26RX1KTg$$2v2dkApvl_y-zAuiRr7yH" : {
+      "id" : "OeiOSxZujUEwy26RX1KTg$$2v2dkApvl_y-zAuiRr7yH",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ref_BKPF",
+        "slug" : "ref_BKPF",
+        "x" : -1280,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Transforms and standardizes financial document data for reporting and analysis.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "HbSSeSCBUD0oHGY9BeBUs$$yekTJ8SQaQDLlHmb1_QFz",
+          "slug" : "out",
+          "dataExplorerProps" : {
+            "filter" : {
+              "type" : "Composite",
+              "op" : {
+                "type" : "AND"
+              },
+              "filters" : [ ]
+            },
+            "sorts" : [ ]
+          }
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "belnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bukrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gjahr"
+          },
+          "description" : ""
+        }, {
+          "target" : "client",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mandt"
+          },
+          "description" : ""
+        }, {
+          "target" : "due_date_flag",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "duefl"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_spl_lot",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lotkz"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stjah"
+          },
+          "description" : ""
+        }, {
+          "target" : "hdr_refkey2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xref2_hd"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_blind_post",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "blind"
+          },
+          "description" : ""
+        }, {
+          "target" : "amt_local_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kzkrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_spl_post",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "basw3"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xrueb"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kurst"
+          },
+          "description" : ""
+        }, {
+          "target" : "arch_obj_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "arcid"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_reorg",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xreorg"
+          },
+          "description" : ""
+        }, {
+          "target" : "clear_ref_doc_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stblg"
+          },
+          "description" : ""
+        }, {
+          "target" : "acc_no_doc_posted",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "knumv"
+          },
+          "description" : ""
+        }, {
+          "target" : "time_last_doc_change",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cputm"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_credit_ctrl_area",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ccins"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "blart"
+          },
+          "description" : ""
+        }, {
+          "target" : "int_tran_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "intdate"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_tran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "basw2"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_split_tran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xsplit"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_block_tran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ssblk"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_doc_no_tran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rldnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_tax_calc",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xmwst"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_doc_reversal",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "glvor"
+          },
+          "description" : ""
+        }, {
+          "target" : "key_group_clear",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ldgrp"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_curr_trran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kzwrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_val_adjust",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wwert"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_type3",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "curt3"
+          },
+          "description" : ""
+        }, {
+          "target" : "bus_tran_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bvorg"
+          },
+          "description" : ""
+        }, {
+          "target" : "branch_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "brnch"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_exch_rate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ctxkrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "date_last_change",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cpudt"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_penalty_rate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "penrc"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_conv_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kuty3"
+          },
+          "description" : ""
+        }, {
+          "target" : "usr_spec_tran_var",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xusvr"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_tran_reversal",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xreversal"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_comp_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fikrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "prop_mgmt_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "propmano"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_reenf_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "reindat"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_doc_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xblnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_type2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "curt2"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_post_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "budat"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_tax__withholding",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xwvof"
+          },
+          "description" : ""
+        }, {
+          "target" : "condition_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kuty2"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_conv_exch_rate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kur2x"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_num_clearingdoc",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "dbblg"
+          },
+          "description" : ""
+        }, {
+          "target" : "aseet_tran_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "awtyp"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_curr_conv3",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kurs3"
+          },
+          "description" : ""
+        }, {
+          "target" : "auto_pay_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ausbk"
+          },
+          "description" : ""
+        }, {
+          "target" : "offset_ref_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "offset_refer_dat"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_post_time",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psotm"
+          },
+          "description" : ""
+        }, {
+          "target" : "net_post_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xsnet"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_post_text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psobt"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_curr2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kurs2"
+          },
+          "description" : ""
+        }, {
+          "target" : "offset_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "offset_status"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_header_txt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bktxt"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_group_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "grpid"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "awkey"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_post_dt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stodt"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_internal_form",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "intform"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_key3",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "hwae3"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_addl_info",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "adisc"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_curr_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "hwaer"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psozl"
+          },
+          "description" : ""
+        }, {
+          "target" : "group_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psosg"
+          },
+          "description" : ""
+        }, {
+          "target" : "post_date_month",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "monat"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_sampling_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sampled"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_category",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doccat"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_last_upd_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "upddt"
+          },
+          "description" : ""
+        }, {
+          "target" : "document_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "dokid"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_key_local2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "hwae2"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_code_doc",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tcode"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_trancurr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "txkrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "partial_clear_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psoak"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_post_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psodt"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "waers"
+          },
+          "description" : ""
+        }, {
+          "target" : "alt_doc_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xblnr_alt"
+          },
+          "description" : ""
+        }, {
+          "target" : "head_ref1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xref1_hd"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_gen_sysname",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "awsys"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_forgn_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kursf"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_resubmit_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "resubmission"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_local_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kursx"
+          },
+          "description" : ""
+        }, {
+          "target" : "vat_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "vatdate"
+          },
+          "description" : ""
+        }, {
+          "target" : "grouping_batch_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "batch"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_followon_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "follow_on"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_type_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "iblar"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bstat"
+          },
+          "description" : ""
+        }, {
+          "target" : "fin_mgmt_field_us",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fm_umart"
+          },
+          "description" : ""
+        }, {
+          "target" : "fin_mgmt_field_st",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stgrd"
+          },
+          "description" : ""
+        }, {
+          "target" : "supplier_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sname"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bldat"
+          },
+          "description" : ""
+        }, {
+          "target" : "cash_alloc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cash_alloc"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_gl_tran_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "umrd3"
+          },
+          "description" : ""
+        }, {
+          "target" : "post_status_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psoks"
+          },
+          "description" : ""
+        }, {
+          "target" : "num_of_pages",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "numpg"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_foreign_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "frath"
+          },
+          "description" : ""
+        }, {
+          "target" : "cash_mgmt_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xmca"
+          },
+          "description" : ""
+        }, {
+          "target" : "payment_part_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ppnam"
+          },
+          "description" : ""
+        }, {
+          "target" : "credit_card_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ccnum"
+          },
+          "description" : ""
+        }, {
+          "target" : "user_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "usnam"
+          },
+          "description" : ""
+        }, {
+          "target" : "reversal_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xstov"
+          },
+          "description" : ""
+        }, {
+          "target" : "payment_order_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psofn"
+          },
+          "description" : ""
+        }, {
+          "target" : "type_ofPosting",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psoty"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_conv_rate2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "umrd2"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_conv3",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kur3x"
+          },
+          "description" : ""
+        }, {
+          "target" : "_sapf15_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_sapf15_status"
+          },
+          "description" : ""
+        }, {
+          "target" : "net_bal_aft_post",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xnetb"
+          },
+          "description" : ""
+        }, {
+          "target" : "entry_exclude_flag",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "exclude_flag"
+          },
+          "description" : ""
+        }, {
+          "target" : "entry_subset",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "subset"
+          },
+          "description" : ""
+        }, {
+          "target" : "entry_last_change_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "aedat"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_deleted",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_fivetran_deleted"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_format(_fivetran_synced, 'yyyy-MM-dd HH:mm:ss')"
+          },
+          "description" : ""
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_format(current_timestamp(), 'yyyy-MM-dd HH:mm:ss')"
+          },
+          "description" : ""
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "split(input_file_name(), '/')[4]"
+          },
+          "description" : ""
+        }, {
+          "target" : "_file_timestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "SUBSTRING(split(input_file_name(), '/')[4], 1, 14)"
+          },
+          "description" : ""
+        }, {
+          "target" : "hvr_change_time",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "hvr_change_time"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##stgrd", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##kuty3", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##adisc", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##basw3", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##kur3x", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##monat", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##stblg", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##bvorg", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xstov", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##sampled", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##batch", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##txkrs", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##ccnum", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##psotm", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##duefl", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##_fivetran_synced", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xnetb", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##bldat", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##ldgrp", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##kursf", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##curt2", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xmwst", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##bktxt", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xref2_hd", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##budat", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##tcode", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##kurs2", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##dokid", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##awtyp", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##kurs3", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##doccat", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##intform", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xrueb", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##psozl", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##kzkrs", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##ctxkrs", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##grpid", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##propmano", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##waers", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##follow_on", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##aedat", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##iblar", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xreorg", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##psoks", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##subset", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xmca", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##_sapf15_status", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##psoty", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##fikrs", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##hwaer", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##blart", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xblnr", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##hwae3", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##mandt", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##usnam", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##awkey", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##bukrs", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##sname", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##_fivetran_deleted", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##resubmission", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##stodt", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##dbblg", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##brnch", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##psodt", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##hwae2", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##kuty2", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##psofn", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##wwert", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xsplit", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##kursx", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##stjah", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##arcid", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##ccins", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##ausbk", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##intdate", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##rldnr", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##curt3", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xsnet", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xwvof", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##hvr_change_time", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xref1_hd", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##kurst", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##lotkz", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##gjahr", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##cpudt", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##numpg", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##reindat", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##ppnam", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##umrd2", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xblnr_alt", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##knumv", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##offset_status", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##frath", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##upddt", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##penrc", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##fm_umart", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##exclude_flag", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##kzwrs", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##basw2", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##psosg", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##belnr", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##vatdate", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##awsys", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##kur2x", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xreversal", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##psobt", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##offset_refer_dat", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##umrd3", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##ssblk", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##psoak", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##cputm", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##cash_alloc", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##bstat", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##glvor", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##blind", "gvG2MznLS4SWhFcecixYI$$cH9iYJ4xD_Xw2EZeVfQtR##xusvr" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "eEcLTBTpHaK6fhGcUAGj1$$MxaR2lAoYLt-A1xks-Alm" : {
+      "id" : "eEcLTBTpHaK6fhGcUAGj1$$MxaR2lAoYLt-A1xks-Alm",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_gold_invoices_tbl",
+        "slug" : "ds_gold_invoices_tbl",
+        "x" : 400,
+        "y" : -280,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the input DataFrame as a Delta table named 'invoices_tbl' in the 'erp_gold' database.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Tv68pX5UWL4lBo8c85k2U$$xN0tA4ZvwPiuNNzNTM4A5",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "KGM6vbv12vl3ZKuf3HHpa$$5g86Oq2nV4jZDUcEQXdL0" : {
+      "id" : "KGM6vbv12vl3ZKuf3HHpa$$5g86Oq2nV4jZDUcEQXdL0",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "filter_by_max_timestamp",
+        "slug" : "filter_by_max_timestamp",
+        "x" : -440,
+        "y" : -120,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Filters data based on a comparison between two maximum timestamps.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "rsGncOt8UMqMNI-4AZFnN$$y85pSXS6BS3URpzHcFA3m",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "IysSw3lDmaGyBwqZxOCfF$$bS1OoT_jb-7k-Q5ssb97h",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "'$bron_rbkp_maxtsp' > '$slvr_rbkp_maxtsp'"
+        }
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Filter",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "66ov4IfT8-hpjdaoM9EKp$$dARJNFp237qJTtOm30Dz2" : {
+      "id" : "66ov4IfT8-hpjdaoM9EKp$$dARJNFp237qJTtOm30Dz2",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_rseg_tbl_1",
+        "slug" : "ds_rseg_tbl_1",
+        "x" : -720,
+        "y" : 40,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Dj4bqp_EqQnA-EekYjHz_$$qbkgJvXuk54m5t2wcFF8S",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "cZr6XNqNqaMzYWVP8pF1r$$-sbT9TfvO2FIVELqo9OvU" : {
+      "id" : "cZr6XNqNqaMzYWVP8pF1r$$-sbT9TfvO2FIVELqo9OvU",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_silver_bkpf_tbl_1",
+        "slug" : "ds_silver_bkpf_tbl_1",
+        "x" : -80,
+        "y" : -280,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "O2-O5H5IAnjb6wa-Yjpg_$$6dV9fH6W2qkRo3vZD0KBi",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "w3gc-83e7oZzLsbnhQNym$$Ey2DYuRpn5jCLPB8fy91B" : {
+      "id" : "w3gc-83e7oZzLsbnhQNym$$Ey2DYuRpn5jCLPB8fy91B",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_silver_rbkp_tbl",
+        "slug" : "ds_silver_rbkp_tbl",
+        "x" : -300,
+        "y" : -120,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the input DataFrame as a Delta table named 'rbkp_tbl' in the silver layer.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "7x-K3qNlStvUt9WpDtwS9$$3jZWdY74OUogkC9dN7iaX",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "kxr4429f3r5ukH4Vb88LQ$$4n7bTTN1qtKSndf_6IDmz" : {
+      "id" : "kxr4429f3r5ukH4Vb88LQ$$4n7bTTN1qtKSndf_6IDmz",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "filter_data_2",
+        "slug" : "filter_data_2",
+        "x" : -1120,
+        "y" : 40,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Filters data based on a condition where the value of 'maxsync_rseg' is greater than 'bron_rseg_maxtsp'.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "C0nQa1bdxUlYndruZf5r-$$kUpLK31G2tARMYPG5UBiY",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "azm3AXTxCaf_5yWAMJeDd$$HRJ8NxO47wLMZUH9C9OeN",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "'$maxsync_rseg' > '$bron_rseg_maxtsp'"
+        }
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Filter",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "4o8J3PPkJjNmxDlFjw6M1$$NxWS2qigsOjlW7MhVVR15" : {
+      "id" : "4o8J3PPkJjNmxDlFjw6M1$$NxWS2qigsOjlW7MhVVR15",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_silver_rseg_tbl_1",
+        "slug" : "ds_silver_rseg_tbl_1",
+        "x" : -40,
+        "y" : 0,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "C5Nu1M6KAEOcFQk1c7uJI$$fqUmNb7Ua0Rb11etVcfOE",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "N3JwO7GUswgTzLUrJiozv$$BE3Dx8QSSTXnT0IKmA4uc" : {
+      "id" : "N3JwO7GUswgTzLUrJiozv$$BE3Dx8QSSTXnT0IKmA4uc",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "filter_data",
+        "slug" : "filter_data",
+        "x" : -1100,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Filters data based on a condition where the value of 'Config.maxsync_bkpf' is greater than 'Config.bron_bkpf_maxtsp'.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "p83ZuvBXqtNoZMI-Ws2Ud$$-vNJJBfcUWtM1Tml_462a",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "OJnypEFZZZ1a5VePNnL1k$$KM7scCV4RUPIUP1qT66gi",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "'$maxsync_bkpf' > '$bron_bkpf_maxtsp'"
+        }
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Filter",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "VT26OoqeIUZJLE2IERfUz$$GHB_8zcGAqQoaUhqVaGcD" : {
+      "id" : "VT26OoqeIUZJLE2IERfUz$$GHB_8zcGAqQoaUhqVaGcD",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_adls_gold_csv",
+        "slug" : "ds_adls_gold_csv",
+        "x" : 400,
+        "y" : -60,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Writes the input DataFrame to a CSV file with specified options, and then concatenates the generated CSV file with an existing file.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ozUtxQLnABBda5PVmWkVW$$klGrXvYYoeGFxbVCkWFX2",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "OlAk7HtvIf0hX2e-BNRXG$$xVmR8MpmkrAPP3eHdkHTR" : {
+      "id" : "OlAk7HtvIf0hX2e-BNRXG$$xVmR8MpmkrAPP3eHdkHTR",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ref_silver_BKPF",
+        "slug" : "ref_silver_BKPF",
+        "x" : -580,
+        "y" : -280,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Extracts relevant columns from the input DataFrame, providing a simplified view of the financial document data.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "kESLY4AcLOEeH5w6MX4SN$$RIxfErA3x2qJ16Nkd_wQe",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doc_number"
+          },
+          "description" : ""
+        }, {
+          "target" : "user_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "user_name"
+          },
+          "description" : ""
+        }, {
+          "target" : "company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "company_code"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fiscal_year"
+          },
+          "description" : ""
+        }, {
+          "target" : "client",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "client"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_spl_post",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ind_spl_post"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doc_type"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_type2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "curr_type2"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_post_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tran_post_date"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_curr_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tran_curr_key"
+          },
+          "description" : ""
+        }, {
+          "target" : "post_date_month",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "post_date_month"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doc_date"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_fivetran_synced"
+          },
+          "description" : ""
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_loadtimestamp"
+          },
+          "description" : ""
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_filename"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##post_date_month", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##_filename", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##company_code", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##ind_spl_post", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##fiscal_year", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##tran_curr_key", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##_fivetran_synced", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##doc_date", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##tran_post_date", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##curr_type2", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##client", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##_loadtimestamp", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##user_name", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##doc_number", "YaP0UnjG3iUwib5a9WokM$$prWwc5UCuH46d0TZxiKa2##doc_type" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "hMP_Tx9JKWKmdyjWAKSSi$$1WRxGK24JY-WT2HagrCN6" : {
+      "id" : "hMP_Tx9JKWKmdyjWAKSSi$$1WRxGK24JY-WT2HagrCN6",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "filter_data_1",
+        "slug" : "filter_data_1",
+        "x" : -1120,
+        "y" : -120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Filters data based on a condition where the value of 'maxsync_rbkp' is greater than 'bron_rbkp_maxtsp'.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "R_shwunNbRVP1gjb5dvGx$$mxvyj7hGAXfemWqVyqWoo",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "6gs69sU4GbDFkhyZm9NYb$$xNBfXWsFywFtXGvDbvmtQ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "'$maxsync_rbkp' > '$bron_rbkp_maxtsp'"
+        }
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Filter",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "3Fqf8aGPVIgmjGPo8juLL$$pDAYu6KqU9V5AQ0LqwyJm" : {
+      "id" : "3Fqf8aGPVIgmjGPo8juLL$$pDAYu6KqU9V5AQ0LqwyJm",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_rbkp_tbl",
+        "slug" : "ds_rbkp_tbl",
+        "x" : -960,
+        "y" : -120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves a DataFrame to a Delta table named 'rbkp_tbl' in the bronze layer.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "81Hivqo28P67xWE_w_Y4_$$hwQxpy7vyQ4HKz-vYridj",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "jEo5I-sq0bkE0C-2oInFk$$wilWEJioijwYXyVn1o13N" : {
+      "id" : "jEo5I-sq0bkE0C-2oInFk$$wilWEJioijwYXyVn1o13N",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ref_RSEG",
+        "slug" : "ref_RSEG",
+        "x" : -1280,
+        "y" : 40,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Transforms and standardizes financial transaction data for reporting and analysis.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "ZrOf0XwhHIvDqlsbtYj09$$hBkMaNQ7BC7LJFCSaG0T7",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "belnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "line_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "buzei"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gjahr"
+          },
+          "description" : ""
+        }, {
+          "target" : "client_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mandt"
+          },
+          "description" : ""
+        }, {
+          "target" : "reversal_doc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mrmok"
+          },
+          "description" : ""
+        }, {
+          "target" : "debit_credit_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "shkzg"
+          },
+          "description" : ""
+        }, {
+          "target" : "bal_amt_aftertrans",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "salk3"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_theme",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fsh_theme"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_acc_class",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bklas"
+          },
+          "description" : ""
+        }, {
+          "target" : "cum_tran_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "vrkum"
+          },
+          "description" : ""
+        }, {
+          "target" : "wrf_characterustic1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wrf_charstc1"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_material_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "matbf"
+          },
+          "description" : ""
+        }, {
+          "target" : "purch_ord_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ebelp"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_quantity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bpmng"
+          },
+          "description" : ""
+        }, {
+          "target" : "recon_account",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "re_account"
+          },
+          "description" : ""
+        }, {
+          "target" : "stock_move_post_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bstme"
+          },
+          "description" : ""
+        }, {
+          "target" : "stock_move_post_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stock_posting_pp"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_gl_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrt"
+          },
+          "description" : ""
+        }, {
+          "target" : "condition_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kschl"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_charges_post_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bnkan"
+          },
+          "description" : ""
+        }, {
+          "target" : "del_note_ref_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lfbnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_post_period",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bustw"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lfgja"
+          },
+          "description" : ""
+        }, {
+          "target" : "vendor_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lifnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "srv_map_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "srvmapkey"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_status_num_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stunr"
+          },
+          "description" : ""
+        }, {
+          "target" : "return_due_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "retduedt"
+          },
+          "description" : ""
+        }, {
+          "target" : "subseg_cat",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sgt_scat"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_curr_ret_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rbwwr"
+          },
+          "description" : ""
+        }, {
+          "target" : "srm_contract_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "srm_contract_itm"
+          },
+          "description" : ""
+        }, {
+          "target" : "record_plant_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "werks"
+          },
+          "description" : ""
+        }, {
+          "target" : "purchase_ord_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ebeln"
+          },
+          "description" : ""
+        }, {
+          "target" : "erp_contract_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "erp_contract_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "record_group_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrp"
+          },
+          "description" : ""
+        }, {
+          "target" : "record_company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bukrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_gl_tran_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tbtkz"
+          },
+          "description" : ""
+        }, {
+          "target" : "purch_doc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "exkbe"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_stock_reason",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrg"
+          },
+          "description" : ""
+        }, {
+          "target" : "batch_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "charg"
+          },
+          "description" : ""
+        }, {
+          "target" : "del_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lfpos"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_grp_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrc"
+          },
+          "description" : ""
+        }, {
+          "target" : "package_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "packno"
+          },
+          "description" : ""
+        }, {
+          "target" : "warehouse_receipt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "werec"
+          },
+          "description" : ""
+        }, {
+          "target" : "bus_proc_ref",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bprbm"
+          },
+          "description" : ""
+        }, {
+          "target" : "valuation_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bwtar"
+          },
+          "description" : ""
+        }, {
+          "target" : "posting_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "pstyp"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_relevance_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xrettaxnet"
+          },
+          "description" : ""
+        }, {
+          "target" : "life_valuation_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xlifo"
+          },
+          "description" : ""
+        }, {
+          "target" : "del_billing_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lfehl"
+          },
+          "description" : ""
+        }, {
+          "target" : "special_gl_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kzmek"
+          },
+          "description" : ""
+        }, {
+          "target" : "fasion_season_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fsh_season_year"
+          },
+          "description" : ""
+        }, {
+          "target" : "supp_rel_contract_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "srm_contract_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_proc_key_grp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "diff_amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "diff_amount"
+          },
+          "description" : ""
+        }, {
+          "target" : "mat_spl_proc_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrm"
+          },
+          "description" : ""
+        }, {
+          "target" : "wrf_charsteristic3",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wrf_charstc3"
+          },
+          "description" : ""
+        }, {
+          "target" : "company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bwkey"
+          },
+          "description" : ""
+        }, {
+          "target" : "cum_quantity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lbkum"
+          },
+          "description" : ""
+        }, {
+          "target" : "inventory_rel_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "invrel"
+          },
+          "description" : ""
+        }, {
+          "target" : "purch_document_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xekbz"
+          },
+          "description" : ""
+        }, {
+          "target" : "stock_post_amt_prevyear",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stock_posting_py"
+          },
+          "description" : ""
+        }, {
+          "target" : "cont_post_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cont_pstyp"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wrbtr"
+          },
+          "description" : ""
+        }, {
+          "target" : "post_description",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sgtxt"
+          },
+          "description" : ""
+        }, {
+          "target" : "stock_posting_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stock_posting"
+          },
+          "description" : ""
+        }, {
+          "target" : "special_group_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrq"
+          },
+          "description" : ""
+        }, {
+          "target" : "invoice_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xdinv"
+          },
+          "description" : ""
+        }, {
+          "target" : "sales_value",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "vmsal"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_grp_indicator",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrv"
+          },
+          "description" : ""
+        }, {
+          "target" : "goods_invrecpt_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "grirg"
+          },
+          "description" : ""
+        }, {
+          "target" : "rev_goods_move_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xrueb"
+          },
+          "description" : ""
+        }, {
+          "target" : "qty_goods_intrans",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rbmng"
+          },
+          "description" : ""
+        }, {
+          "target" : "goods_move_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gityp"
+          },
+          "description" : ""
+        }, {
+          "target" : "complaint_reason",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "complaint_reason"
+          },
+          "description" : ""
+        }, {
+          "target" : "hist_material_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xhistma"
+          },
+          "description" : ""
+        }, {
+          "target" : "complaint_reason_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zekkn"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_unit_of_measure",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "meins"
+          },
+          "description" : ""
+        }, {
+          "target" : "inv_item_origin",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "inv_itm_origin"
+          },
+          "description" : ""
+        }, {
+          "target" : "cross_comp_post_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xcprf"
+          },
+          "description" : ""
+        }, {
+          "target" : "license_no_item",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "licno"
+          },
+          "description" : ""
+        }, {
+          "target" : "ext_spl_purpose_group",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrext"
+          },
+          "description" : ""
+        }, {
+          "target" : "wrf_characteristic2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wrf_charstc2"
+          },
+          "description" : ""
+        }, {
+          "target" : "material_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "matnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "internal_row_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "introw"
+          },
+          "description" : ""
+        }, {
+          "target" : "basic_unit_of_measure",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bprme"
+          },
+          "description" : ""
+        }, {
+          "target" : "grp_ofitems_code_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gricd"
+          },
+          "description" : ""
+        }, {
+          "target" : "fashion_season",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fsh_season"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_reference_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "frbnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_spl_handling_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xskrl"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_quant",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "menge"
+          },
+          "description" : ""
+        }, {
+          "target" : "percent_ret_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "retpc"
+          },
+          "description" : ""
+        }, {
+          "target" : "line_item_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zeile"
+          },
+          "description" : ""
+        }, {
+          "target" : "taxation_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mwskz"
+          },
+          "description" : ""
+        }, {
+          "target" : "fasion_collection",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fsh_collection"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_numbering_counter",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zaehk"
+          },
+          "description" : ""
+        }, {
+          "target" : "rev_doc_indicator",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "erekz"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_doc_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xblnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "erp_contract_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "erp_contract_itm"
+          },
+          "description" : ""
+        }, {
+          "target" : "ret_amt_for_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "retamt_fc"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_juris_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "txjcd"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_grp_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "knttp"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_deleted",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_fivetran_deleted"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_format(_fivetran_synced, 'yyyy-MM-dd HH:mm:ss')"
+          },
+          "description" : ""
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_format(current_timestamp(), 'yyyy-MM-dd HH:mm:ss')"
+          },
+          "description" : ""
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "split(input_file_name(), '/')[4]"
+          },
+          "description" : ""
+        }, {
+          "target" : "_file_timestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "SUBSTRING(split(input_file_name(), '/')[4], 1, 14)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##spgrp", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##wrbtr", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##packno", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##lbkum", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##cont_pstyp", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##bustw", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##stock_posting_py", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##werks", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##bwtar", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##tbtkz", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##gricd", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##spgrt", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##charg", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##xlifo", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##diff_amount", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##erp_contract_id", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##invrel", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##fsh_collection", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##retduedt", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##bklas", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##gjahr", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##txjcd", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##retamt_fc", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##re_account", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##bprbm", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##wrf_charstc1", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##wrf_charstc3", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##rbmng", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##_fivetran_deleted", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##spgrq", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##spgrg", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##sgtxt", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##frbnr", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##kschl", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##meins", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##gityp", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##mandt", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##erekz", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##mrmok", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##matbf", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##rbwwr", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##xhistma", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##stunr", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##srm_contract_id", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##mwskz", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##spgrm", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##zeile", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##kzmek", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##xcprf", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##buzei", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##retpc", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##vrkum", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##wrf_charstc2", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##xrettaxnet", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##bukrs", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##inv_itm_origin", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##xrueb", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##bstme", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##zekkn", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##zaehk", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##fsh_season_year", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##ebeln", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##sgt_scat", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##bnkan", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##srvmapkey", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##licno", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##knttp", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##introw", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##matnr", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##lfehl", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##fsh_theme", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##salk3", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##complaint_reason", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##spgrc", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##vmsal", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##fsh_season", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##_fivetran_synced", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##xskrl", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##bprme", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##spgrext", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##spgrv", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##werec", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##lifnr", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##xdinv", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##grirg", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##bwkey", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##spgrs", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##shkzg", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##lfgja", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##lfpos", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##menge", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##stock_posting_pp", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##lfbnr", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##srm_contract_itm", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##belnr", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##exkbe", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##pstyp", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##xekbz", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##ebelp", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##xblnr", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##erp_contract_itm", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##bpmng", "WMyMMZa5RLYAYAoxre4eM$$bYXr-sXYmRUQnm33DbR7f##stock_posting" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "-XDL08b8WRsbbNYOBBm5M$$a6K9Qj0ldocsj-uYKJyjo" : {
+      "id" : "-XDL08b8WRsbbNYOBBm5M$$a6K9Qj0ldocsj-uYKJyjo",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ref_RBKP",
+        "slug" : "ref_RBKP",
+        "x" : -1280,
+        "y" : -120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Standardizes and renames columns in financial transaction data for better clarity and consistency.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "Bh_TfLsE88C2ED1Dh6-tw$$05hnQfTERiAkC4aHT6E3E",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "belnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gjahr"
+          },
+          "description" : ""
+        }, {
+          "target" : "client_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mandt"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_exch_rate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ctxkrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "amount_loc_currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "makzn"
+          },
+          "description" : ""
+        }, {
+          "target" : "lot_type_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lotkz"
+          },
+          "description" : ""
+        }, {
+          "target" : "fin_tran_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fityp"
+          },
+          "description" : ""
+        }, {
+          "target" : "location",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ort01"
+          },
+          "description" : ""
+        }, {
+          "target" : "po_box",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "pfach"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_posting_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "budat"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_ac_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "beznk"
+          },
+          "description" : ""
+        }, {
+          "target" : "branch_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "brnch"
+          },
+          "description" : ""
+        }, {
+          "target" : "fis_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stjah"
+          },
+          "description" : ""
+        }, {
+          "target" : "data_entry_time",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cputm"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kursx"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_tran_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "txjcd_bnk"
+          },
+          "description" : ""
+        }, {
+          "target" : "user_who_copied",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "copy_user"
+          },
+          "description" : ""
+        }, {
+          "target" : "stock_transfer_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stkzn"
+          },
+          "description" : ""
+        }, {
+          "target" : "postal_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "pstlz"
+          },
+          "description" : ""
+        }, {
+          "target" : "xcomp_code_post_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xcpdk"
+          },
+          "description" : ""
+        }, {
+          "target" : "inv_tran_entry",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "inv_tran"
+          },
+          "description" : ""
+        }, {
+          "target" : "sec_cost_centre",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "secco"
+          },
+          "description" : ""
+        }, {
+          "target" : "fix_asset_tag_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fdtag"
+          },
+          "description" : ""
+        }, {
+          "target" : "ext_goods_rcpt_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xegdr"
+          },
+          "description" : ""
+        }, {
+          "target" : "fix_asset_level",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fdlev"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_next_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "assign_next_date"
+          },
+          "description" : ""
+        }, {
+          "target" : "prepay_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "prepay_status"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_document_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xblnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "investment_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xinve"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_for_curr_tran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kursf"
+          },
+          "description" : ""
+        }, {
+          "target" : "prepay_loc_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "qsshb"
+          },
+          "description" : ""
+        }, {
+          "target" : "prepay_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "prepay_awkey"
+          },
+          "description" : ""
+        }, {
+          "target" : "third_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name3"
+          },
+          "description" : ""
+        }, {
+          "target" : "prepay_ref",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "uzawe"
+          },
+          "description" : ""
+        }, {
+          "target" : "foreign_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lieffn"
+          },
+          "description" : ""
+        }, {
+          "target" : "reversal_doc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xrech"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_copiedto_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "copy_by_year"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rmwwr"
+          },
+          "description" : ""
+        }, {
+          "target" : "vendor_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lifnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_salespurch_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xmwst"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_tran_taxcode",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mwskz_bnk"
+          },
+          "description" : ""
+        }, {
+          "target" : "bus_place_bank_tran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bupla"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_tran_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bvtyp"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_tax_coll",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "txkrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "for_curr_tax_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "qsfbt"
+          },
+          "description" : ""
+        }, {
+          "target" : "vendor_ac_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "knumvl"
+          },
+          "description" : ""
+        }, {
+          "target" : "assign_end_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "assign_end_date"
+          },
+          "description" : ""
+        }, {
+          "target" : "auto_pay_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xautakz"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_val_local_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wwert"
+          },
+          "description" : ""
+        }, {
+          "target" : "company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bukrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "tgt_doc_num_forcopying",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "copy_to_belnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_curr_tax_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wmwst2"
+          },
+          "description" : ""
+        }, {
+          "target" : "payment_method",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zlspr"
+          },
+          "description" : ""
+        }, {
+          "target" : "esr_refr_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "esrre"
+          },
+          "description" : ""
+        }, {
+          "target" : "withholding_tax_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wskto"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_exempt_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stceg"
+          },
+          "description" : ""
+        }, {
+          "target" : "street_address",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stras"
+          },
+          "description" : ""
+        }, {
+          "target" : "last_change_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cpudt"
+          },
+          "description" : ""
+        }, {
+          "target" : "billing_doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "filkd"
+          },
+          "description" : ""
+        }, {
+          "target" : "assignment_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zuonr"
+          },
+          "description" : ""
+        }, {
+          "target" : "for_trade_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "frgkz"
+          },
+          "description" : ""
+        }, {
+          "target" : "elect_data__intchg_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "egmld"
+          },
+          "description" : ""
+        }, {
+          "target" : "withholding_tax_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rebzj"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_gl_tran_tax_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "qsskz"
+          },
+          "description" : ""
+        }, {
+          "target" : "pay_ref_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zfbdt"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_tax_treat_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "j_1kftind"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_doc_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rebzg"
+          },
+          "description" : ""
+        }, {
+          "target" : "country_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "landl"
+          },
+          "description" : ""
+        }, {
+          "target" : "invoice_rcpt_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "reindat"
+          },
+          "description" : ""
+        }, {
+          "target" : "invoice_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ivtyp"
+          },
+          "description" : ""
+        }, {
+          "target" : "bus_area_taxpurpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "j_1kftbus"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_region",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "regio"
+          },
+          "description" : ""
+        }, {
+          "target" : "amt_locl_currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zbd3t"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_base_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "j_1tpbupl"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_amt_local_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wmwst1"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "dtaws"
+          },
+          "description" : ""
+        }, {
+          "target" : "cust_iden_um",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kidno"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "vgart"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zbd2t"
+          },
+          "description" : ""
+        }, {
+          "target" : "vat_calc_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "vatdate"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "blart"
+          },
+          "description" : ""
+        }, {
+          "target" : "second_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name2"
+          },
+          "description" : ""
+        }, {
+          "target" : "repr_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "j_1kfrepre"
+          },
+          "description" : ""
+        }, {
+          "target" : "vendor_acc_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "knumve"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_num4",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stcd4"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_regn_num_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stcdt"
+          },
+          "description" : ""
+        }, {
+          "target" : "pay_meth_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lzbkz"
+          },
+          "description" : ""
+        }, {
+          "target" : "logical_sys",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "logsys"
+          },
+          "description" : ""
+        }, {
+          "target" : "pay_block_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "pskto"
+          },
+          "description" : ""
+        }, {
+          "target" : "percent_tax_disc2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zbd2p"
+          },
+          "description" : ""
+        }, {
+          "target" : "entity_tax_iden",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stcd2"
+          },
+          "description" : ""
+        }, {
+          "target" : "esr_ref_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "esrnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "for_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "makzmw"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_currency_amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "arkuen"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_num_forclearing",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stblg"
+          },
+          "description" : ""
+        }, {
+          "target" : "amt_curr1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zbd1t"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_info",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xref3"
+          },
+          "description" : ""
+        }, {
+          "target" : "percent_curr1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zbd1p"
+          },
+          "description" : ""
+        }, {
+          "target" : "name_entry_creator",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ername"
+          },
+          "description" : ""
+        }, {
+          "target" : "amt_local_currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lieffmw"
+          },
+          "description" : ""
+        }, {
+          "target" : "data_copiedto_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "copy_to_year"
+          },
+          "description" : ""
+        }, {
+          "target" : "lang_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spras"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_doc_text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xrbtx"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bankl"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_gl_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stkzu"
+          },
+          "description" : ""
+        }, {
+          "target" : "pay_method_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zlsch"
+          },
+          "description" : ""
+        }, {
+          "target" : "house_bank_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "hbkid"
+          },
+          "description" : ""
+        }, {
+          "target" : "emp_group",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "empfg"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_code2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mwskz2"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_acc_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bkont"
+          },
+          "description" : ""
+        }, {
+          "target" : "bus_partner_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "j_1bnftype"
+          },
+          "description" : ""
+        }, {
+          "target" : "recon_partner",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "repart"
+          },
+          "description" : ""
+        }, {
+          "target" : "sap_rel_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "saprl"
+          },
+          "description" : ""
+        }, {
+          "target" : "assign_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "assign_status"
+          },
+          "description" : ""
+        }, {
+          "target" : "user_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "usnam"
+          },
+          "description" : ""
+        }, {
+          "target" : "type_of_doc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "erfpr"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_curr+amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "arkuemw"
+          },
+          "description" : ""
+        }, {
+          "target" : "document_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bldat"
+          },
+          "description" : ""
+        }, {
+          "target" : "special_gl_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stkza"
+          },
+          "description" : ""
+        }, {
+          "target" : "business_area",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gsber"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_account_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bankn"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stcd1"
+          },
+          "description" : ""
+        }, {
+          "target" : "fixed_asset_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zbfix"
+          },
+          "description" : ""
+        }, {
+          "target" : "name_entity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name1"
+          },
+          "description" : ""
+        }, {
+          "target" : "payment_terms",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zterm"
+          },
+          "description" : ""
+        }, {
+          "target" : "emp_feedback_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "empfb"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_discount_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "diekz"
+          },
+          "description" : ""
+        }, {
+          "target" : "rebate_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rbstat"
+          },
+          "description" : ""
+        }, {
+          "target" : "postal_code2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "pstl2"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bktxt"
+          },
+          "description" : ""
+        }, {
+          "target" : "sal_title_person",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "anred"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_category",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mwskz1"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_code_identifier",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tcode"
+          },
+          "description" : ""
+        }, {
+          "target" : "document_num_copy",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "copy_by_belnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_iden_num3",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stcd3"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "hkont"
+          },
+          "description" : ""
+        }, {
+          "target" : "name4",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name4"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_payment_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "esrpz"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "dtams"
+          },
+          "description" : ""
+        }, {
+          "target" : "name_entry_creator2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "erfnam"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_bank_ref_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bkref"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_bank_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "banks"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_currency_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "waers"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_country_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "land1"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_desc_details",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sgtxt"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_deleted",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_fivetran_deleted"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_format(_fivetran_synced, 'yyyy-MM-dd HH:mm:ss')"
+          },
+          "description" : ""
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_format(current_timestamp(), 'yyyy-MM-dd HH:mm:ss')"
+          },
+          "description" : ""
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "split(input_file_name(), '/')[4]"
+          },
+          "description" : ""
+        }, {
+          "target" : "_file_timestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "SUBSTRING(split(input_file_name(), '/')[4], 1, 14)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##name2", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##_fivetran_deleted", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##arkuen", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##uzawe", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##wwert", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##copy_to_belnr", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##bukrs", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##repart", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##xautakz", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##j_1kfrepre", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##stkza", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##stcd3", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##secco", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##prepay_awkey", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##qsshb", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##zbd1p", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##knumvl", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##assign_next_date", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##lotkz", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##fdtag", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##stjah", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##stkzu", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##makzmw", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##stcd4", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##ctxkrs", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##assign_end_date", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##anred", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##pfach", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##xinve", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##filkd", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##name4", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##bldat", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##copy_by_year", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##name3", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##stblg", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##prepay_status", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##spras", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##zbfix", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##j_1bnftype", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##rebzj", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##saprl", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##bkont", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##knumve", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##bupla", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##cputm", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##inv_tran", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##kidno", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##esrre", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##j_1kftbus", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##land1", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##qsfbt", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##rebzg", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##copy_by_belnr", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##stkzn", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##rbstat", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##rmwwr", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##mwskz_bnk", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##brnch", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##reindat", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##esrpz", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##xmwst", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##kursx", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##diekz", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##ort01", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##budat", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##j_1kftind", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##xcpdk", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##mwskz2", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##qsskz", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##xrech", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##zbd2p", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##_fivetran_synced", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##egmld", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##wmwst2", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##lifnr", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##bankn", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##erfpr", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##blart", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##zbd2t", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##bktxt", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##wskto", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##sgtxt", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##zuonr", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##copy_to_year", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##waers", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##txjcd_bnk", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##vatdate", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##fdlev", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##pstl2", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##zlspr", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##beznk", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##bvtyp", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##ername", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##zterm", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##j_1tpbupl", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##pstlz", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##stcd2", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##zlsch", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##frgkz", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##mwskz1", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##logsys", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##hbkid", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##zfbdt", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##tcode", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##bankl", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##ivtyp", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##cpudt", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##wmwst1", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##usnam", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##zbd3t", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##assign_status", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##banks", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##empfb", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##dtaws", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##lieffmw", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##pskto", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##belnr", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##stceg", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##arkuemw", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##stras", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##makzn", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##empfg", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##bkref", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##lieffn", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##dtams", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##lzbkz", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##erfnam", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##xrbtx", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##gsber", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##esrnr", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##txkrs", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##xref3", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##vgart", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##stcdt", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##regio", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##name1", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##fityp", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##landl", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##kursf", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##xegdr", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##copy_user", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##zbd1t", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##hkont", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##stcd1", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##mandt", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##xblnr", "pWGgj1nUkxNCMv4SblA2K$$kj56KmtfFKqNV49HwV4fp##gjahr" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "k9QbxC-ZmlYSlQDNmji8b$$9hEccE6hj4Q0t3rWwMoNh" : {
+      "id" : "k9QbxC-ZmlYSlQDNmji8b$$9hEccE6hj4Q0t3rWwMoNh",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ref_silver_RBKP",
+        "slug" : "ref_silver_RBKP",
+        "x" : -560,
+        "y" : -120,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Extracts relevant columns from a dataset related to silver refunds.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "_2Ql_Y4lrlpQRzdFn2uUu$$ixP5UrC2efSlh-464U3Zh",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doc_number"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fiscal_year"
+          },
+          "description" : ""
+        }, {
+          "target" : "client_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "client_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "reversal_doc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "reversal_doc_ind"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doc_curr_amt"
+          },
+          "description" : ""
+        }, {
+          "target" : "vendor_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "vendor_num"
+          },
+          "description" : ""
+        }, {
+          "target" : "company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "company_code"
+          },
+          "description" : ""
+        }, {
+          "target" : "amt_locl_currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "amt_locl_currency"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_amt_local_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tax_amt_local_curr"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tran_amt"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_category",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tax_category"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_fivetran_synced"
+          },
+          "description" : ""
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_loadtimestamp"
+          },
+          "description" : ""
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_filename"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##doc_number", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##company_code", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##_fivetran_synced", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##reversal_doc_ind", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##_filename", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##doc_curr_amt", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##tax_category", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##vendor_num", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##tran_amt", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##client_id", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##fiscal_year", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##amt_locl_currency", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##tax_amt_local_curr", "g9lDeNs06c8_s8FAUaHSL$$xVIT9hMzksNQL8VjeO3Y_##_loadtimestamp" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "aF00isey0DXQK2Ow5ir8P$$oqnL7PuHBR1a0FsS2x7xj" : {
+      "id" : "aF00isey0DXQK2Ow5ir8P$$oqnL7PuHBR1a0FsS2x7xj",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ref_silver_RSEG",
+        "slug" : "ref_silver_RSEG",
+        "x" : -560,
+        "y" : 40,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Extracts specific columns from the input dataframe, providing a refined view of the data related to silver RSEG.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "dseneYZh1-sgg-L-UD2xt$$Cjw3HFXmRj7FOOZziku-o",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "31EvmfCD4Yl7p4aEkcV0L$$QekJ4qNISeZES56C2zE2R",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doc_number"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fiscal_year"
+          },
+          "description" : ""
+        }, {
+          "target" : "line_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "line_item_num"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_quant",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "item_quant"
+          },
+          "description" : ""
+        }, {
+          "target" : "record_plant_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "record_plant_code"
+          },
+          "description" : ""
+        }, {
+          "target" : "purchase_ord_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "purchase_ord_num"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_fivetran_synced"
+          },
+          "description" : ""
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_loadtimestamp"
+          },
+          "description" : ""
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_filename"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "dseneYZh1-sgg-L-UD2xt$$Cjw3HFXmRj7FOOZziku-o##fiscal_year", "dseneYZh1-sgg-L-UD2xt$$Cjw3HFXmRj7FOOZziku-o##_filename", "dseneYZh1-sgg-L-UD2xt$$Cjw3HFXmRj7FOOZziku-o##record_plant_code", "dseneYZh1-sgg-L-UD2xt$$Cjw3HFXmRj7FOOZziku-o##line_item_num", "dseneYZh1-sgg-L-UD2xt$$Cjw3HFXmRj7FOOZziku-o##_loadtimestamp", "dseneYZh1-sgg-L-UD2xt$$Cjw3HFXmRj7FOOZziku-o##doc_number", "dseneYZh1-sgg-L-UD2xt$$Cjw3HFXmRj7FOOZziku-o##item_quant", "dseneYZh1-sgg-L-UD2xt$$Cjw3HFXmRj7FOOZziku-o##purchase_ord_num", "dseneYZh1-sgg-L-UD2xt$$Cjw3HFXmRj7FOOZziku-o##_fivetran_synced" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "V5D5mY1Nn5gEgmkCA4lad$$4q3xJW3rciBmm5qyp33p0" : {
+      "id" : "V5D5mY1Nn5gEgmkCA4lad$$4q3xJW3rciBmm5qyp33p0",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_stg_hvr_bkpf",
+        "slug" : "ds_stg_hvr_bkpf",
+        "x" : -1440,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Reads transaction data from a Parquet file.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "hEAFCiP37qX1_I7vxWjrB$$3CXiZx90mnRxO1YpmKe4i",
+          "slug" : "out",
+          "dataExplorerProps" : {
+            "filter" : {
+              "type" : "Composite",
+              "op" : {
+                "type" : "AND"
+              },
+              "filters" : [ ]
+            },
+            "sorts" : [ {
+              "type" : "Simple",
+              "exp" : {
+                "type" : "Field",
+                "value" : "belnr"
+              },
+              "order" : {
+                "type" : "Asc"
+              }
+            } ]
+          }
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "hthIvP-YmciSQz6pFAJ89$$0KvLzMU6Yd4y-IlRdhH83" : {
+      "id" : "hthIvP-YmciSQz6pFAJ89$$0KvLzMU6Yd4y-IlRdhH83",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "filter_by_max_timestamp_1",
+        "slug" : "filter_by_max_timestamp_1",
+        "x" : -420,
+        "y" : 40,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Filters data based on a comparison between two maximum timestamps.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "fi1VXErnIgApBGbLohzHa$$LZ6rF8ctOlXRymroI2JEI",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "6LeF8l5NHbkN91qgTLSDX$$6a001C5divrKiEhpbQYqY",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "'$bron_rseg_maxtsp' > '$slvr_rseg_maxtsp'"
+        }
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Filter",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "DImNLRCivE_c8-guuELcY$$igD9Xb9qXYolLWvrWpKHR" : {
+      "id" : "DImNLRCivE_c8-guuELcY$$igD9Xb9qXYolLWvrWpKHR",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "filter_by_maxtsp_bkpf",
+        "slug" : "filter_by_maxtsp_bkpf",
+        "x" : -440,
+        "y" : -280,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Filters data based on a comparison between two configuration values, selecting records where the bronze maximum timestamp is greater than the silver maximum timestamp.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "0KD7-23tMjdctlIJ6UUGy$$J2T4YVDo_XnUtiR9_y70q",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "mqARWFueNq0_x9UiZMk4S$$fMQcu_Gl6or4uRfXTAU5w",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "'$bron_bkpf_maxtsp' > '$slvr_bkpf_maxtsp'"
+        }
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Filter",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "7Lv5l0aXgMFYwDYmZAZq_$$FcDsFar_n0oB_QxCYK0mZ" : {
+      "id" : "7Lv5l0aXgMFYwDYmZAZq_$$FcDsFar_n0oB_QxCYK0mZ",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_stg_hvr_rseg",
+        "slug" : "ds_stg_hvr_rseg",
+        "x" : -1420,
+        "y" : 40,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Reads transaction data from a Parquet file and returns it as a DataFrame.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "EwMoAV8Ou-e6ZFmiJx2FR$$viBrj81pXWRI7PmnNZfqS",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "GXQHejG45LYE6QVK-x0bK$$eOZe04vSycJcbK7tryOK7" : {
+      "id" : "GXQHejG45LYE6QVK-x0bK$$eOZe04vSycJcbK7tryOK7",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "update_max_timestamps",
+        "slug" : "update_max_timestamps",
+        "x" : -1460,
+        "y" : -480,
+        "phase" : -3,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Updates and tracks the latest synchronization timestamps for different data processing stages, ensuring data consistency across layers.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : true
+      },
+      "properties" : {
+        "script" : "from pyspark.sql import *\r\nfrom pyspark.sql.functions import max\r\nfrom datetime import datetime\r\nfrom pyspark.sql.functions import input_file_name, lit, substring\r\n\r\n#table = Config.tbl\r\n#schema = Config.sch_stg\r\n\r\n\r\nprint('Init Timestamp BKPF: ',Config.bron_bkpf_maxtsp )\r\nprint('Init Timestamp RBKP: ',Config.bron_rbkp_maxtsp)\r\nprint('Init Timestamp RSEG: ',Config.bron_rseg_maxtsp)\r\n\r\n\r\n# LANDING LAYER DATA FROM FILES MAX SYNC TIMESTAMPS\r\ndf11 = spark.read.format('parquet').load('dbfs:/mnt/HVR/transaction/*bkpf.parquet')\r\ndf22 = spark.read.format('parquet').load('dbfs:/mnt/HVR/transaction/*rbkp.parquet')\r\ndf33 = spark.read.format('parquet').load('dbfs:/mnt/HVR/transaction/*rseg.parquet')\r\n\r\n# Create a Temp Views for the dataframes\r\ndf11.createOrReplaceTempView(\"v_bkpf_tbl\")\r\ndf22.createOrReplaceTempView(\"v_rbkp_tbl\")\r\ndf33.createOrReplaceTempView(\"v_rseg_tbl\")\r\n\r\n# EXTRACTING AND ADDING LANDING LAYER _file_timestamp TO THE DATAFRAME\r\ndf11 = spark.sql(f'''select *, substring(split(input_file_name(), '/')[4], 1, 14)   \r\n                _file_timestamp from v_bkpf_tbl\r\n                   ''')\r\n                   \r\ndf22 = spark.sql(f'''select *, substring(split(input_file_name(), '/')[4], 1, 14)   \r\n                _file_timestamp from v_rbkp_tbl\r\n                   ''')\r\n\r\ndf33 = spark.sql(f'''select *, substring(split(input_file_name(), '/')[4], 1, 14)   \r\n                _file_timestamp from v_rseg_tbl\r\n                   ''')                  \r\n\r\n# LANDING LAYER TIMESTAMPS\r\nvar_maxsync_bkpf = df11.agg({\"_file_timestamp\": \"max\"}).first()[0]\r\nvar_maxsync_rbkp = df22.agg({\"_file_timestamp\": \"max\"}).first()[0]\r\nvar_maxsync_rseg = df33.agg({\"_file_timestamp\": \"max\"}).first()[0]\r\n\r\n# LANDING LAYER TIMESTAMP CONV TO STRING TO STRIP MILLISECONDS\r\n# var_maxsync_bkpf = var_maxsync_bkpf.strftime(\"%Y-%m-%d %H:%M:%S\")\r\n# var_maxsync_rbkp = var_maxsync_rbkp.strftime(\"%Y-%m-%d %H:%M:%S\")\r\n# var_maxsync_rseg = var_maxsync_rseg.strftime(\"%Y-%m-%d %H:%M:%S\")\r\n\r\nConfig.maxsync_bkpf = var_maxsync_bkpf\r\nConfig.maxsync_rbkp = var_maxsync_rbkp\r\nConfig.maxsync_rseg = var_maxsync_rseg\r\n\r\nprint('\\nLANDING maxsync_bkpf:', Config.maxsync_bkpf)\r\nprint('LANDING maxsync_rbkp:', Config.maxsync_rbkp)\r\nprint('LANDING maxsync_rseg:', Config.maxsync_rseg)\r\n\r\n# BRONZE LAYER TIMESTAMPS\r\ndf1 = spark.sql(f'''select COALESCE(MAX(_file_timestamp), 0) \r\n                   from erp_bronze.bkpf_tbl\r\n                   ''')\r\n\r\ndf2 = spark.sql(f'''select COALESCE(MAX(_file_timestamp), 0) \r\n                   from erp_bronze.rbkp_tbl\r\n                   ''')\r\n\r\ndf3 = spark.sql(f'''select COALESCE(MAX(_file_timestamp), 0) \r\n                   from erp_bronze.rseg_tbl\r\n                   ''')\r\n\r\nvar_bron_bkpf_maxtsp = df1.take(1)[0][0]\r\nvar_bron_rbkp_maxtsp = df2.take(1)[0][0]\r\nvar_bron_rseg_maxtsp = df3.take(1)[0][0]\r\n\r\nConfig.bron_bkpf_maxtsp = var_bron_bkpf_maxtsp\r\nConfig.bron_rbkp_maxtsp = var_bron_rbkp_maxtsp\r\nConfig.bron_rseg_maxtsp = var_bron_rseg_maxtsp\r\n\r\n\r\nprint('\\nBRONZE Max _file_timestamp BKPF  : ',Config.bron_bkpf_maxtsp )\r\nprint('BRONZE Max _file_timestamp RBKP  : ',Config.bron_rbkp_maxtsp )\r\nprint('BRONZE Max _file_timestamp RSEG  : ',Config.bron_rseg_maxtsp )\r\n\r\n#############  SILVER LAYER #############\r\n\r\ndf1 = spark.sql(f'''select COALESCE(MAX(_file_timestamp), 0) \r\n                   from erp_silver.bkpf_tbl\r\n                   ''')\r\nvar_slvr_bkpf_maxtsp = df1.take(1)[0][0]\r\n\r\ndf2 = spark.sql(f'''select COALESCE(MAX(_file_timestamp), 0) \r\n                   from erp_silver.rbkp_tbl\r\n                   ''')\r\n\r\ndf3 = spark.sql(f'''select COALESCE(MAX(_file_timestamp), 0) \r\n                   from erp_silver.rseg_tbl\r\n                   ''')\r\n\r\nvar_slvr_bkpf_maxtsp = df1.take(1)[0][0]\r\nvar_slvr_rbkp_maxtsp = df2.take(1)[0][0]\r\nvar_slvr_rseg_maxtsp = df3.take(1)[0][0]\r\n\r\nConfig.slvr_bkpf_maxtsp = var_slvr_bkpf_maxtsp\r\nConfig.slvr_rbkp_maxtsp = var_slvr_rbkp_maxtsp\r\nConfig.slvr_rseg_maxtsp = var_slvr_rseg_maxtsp\r\n\r\n\r\nprint('\\nSILVER Max _file_timestamp BKPF  : ',Config.slvr_bkpf_maxtsp )\r\nprint('SILVER Max _file_timestamp RBKP  : ',Config.slvr_rbkp_maxtsp )\r\nprint('SILVER Max _file_timestamp RSEG  : ',Config.slvr_rseg_maxtsp )\r\n\r\n# # # # # # # # #   GOLD LAYER   # # # # # # # # # # # #\r\n\r\ndf1 = spark.sql(f'''select COALESCE(MAX(_file_timestamp), 0) \r\n                   from erp_gold.invoices_tbl\r\n                   ''')\r\nvar_gold_invoices_maxtsp = df1.take(1)[0][0]\r\n\r\n\r\nvar_gold_bkpf_maxtsp = df1.take(1)[0][0]\r\n\r\nConfig.gold_invoices_maxtsp = var_gold_invoices_maxtsp\r\n\r\nprint('\\nGOLD Max _fle_timestamp INVOICES  : ',Config.gold_invoices_maxtsp )\r\n\r\n\r\n",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
+      }
+    },
+    "Ld8gScO_EdYXmjsmpbSex$$Gr4j_dPNLTen1gmCBxb0Z" : {
+      "id" : "Ld8gScO_EdYXmjsmpbSex$$Gr4j_dPNLTen1gmCBxb0Z",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "join_documents",
+        "slug" : "join_documents",
+        "x" : 140,
+        "y" : -280,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Joins multiple document datasets based on document number and fiscal year, consolidating relevant information from each dataset.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV",
+          "slug" : "in0"
+        }, {
+          "id" : "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx",
+          "slug" : "in1"
+        }, {
+          "id" : "t-QJFkyTh_CAW4utcyNwk$$AALS0oU1uC8z6uDj1KrLh",
+          "slug" : "in2"
+        } ],
+        "outputs" : [ {
+          "id" : "A_gY-wedERYTBB5n03JYr$$Fbl1-LIrz0237Ubn9bYU8",
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "doc_number",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "user_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "company_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "fiscal_year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "client",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_spl_post",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "doc_type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "curr_type2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "tran_post_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "tran_curr_key",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "post_date_month",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "doc_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "client_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reversal_doc_ind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "doc_curr_amt",
+              "type" : "decimal(13,2)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "vendor_num",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "amt_locl_currency",
+              "type" : "decimal(3,0)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "tax_amt_local_curr",
+              "type" : "decimal(13,2)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "tran_amt",
+              "type" : "decimal(3,0)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "tax_category",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "line_item_num",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "item_quant",
+              "type" : "decimal(13,3)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "record_plant_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_ord_num",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_loadtimestamp",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_filename",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_number = in1.doc_number and in0.fiscal_year = in1.fiscal_year"
+          },
+          "joinType" : "left_outer"
+        }, {
+          "alias" : "in2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_number = in2.doc_number and in0.fiscal_year = in2.fiscal_year"
+          },
+          "joinType" : "left_outer"
+        } ],
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_number"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "user_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.user_name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.company_code"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.fiscal_year"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "client",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.client"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ind_spl_post",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ind_spl_post"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_type"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "curr_type2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.curr_type2"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "tran_post_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.tran_post_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "tran_curr_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.tran_curr_key"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "post_date_month",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.post_date_month"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "doc_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "client_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.client_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "reversal_doc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.reversal_doc_ind"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "doc_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.doc_curr_amt"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "vendor_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.vendor_num"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "amt_locl_currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.amt_locl_currency"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "tax_amt_local_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.tax_amt_local_curr"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "tran_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.tran_amt"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "tax_category",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.tax_category"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "line_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in2.line_item_num"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "item_quant",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in2.item_quant"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "record_plant_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in2.record_plant_code"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "purchase_ord_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in2.purchase_ord_num"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0._fivetran_synced"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0._loadtimestamp"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0._filename"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "hints" : [ {
+          "id" : "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "t-QJFkyTh_CAW4utcyNwk$$AALS0oU1uC8z6uDj1KrLh",
+          "alias" : "in2",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##fiscal_year", "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx##fiscal_year", "t-QJFkyTh_CAW4utcyNwk$$AALS0oU1uC8z6uDj1KrLh##doc_number", "t-QJFkyTh_CAW4utcyNwk$$AALS0oU1uC8z6uDj1KrLh##fiscal_year", "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx##doc_number", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##doc_number", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##post_date_month", "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx##tax_category", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##doc_date", "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx##reversal_doc_ind", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##doc_number", "t-QJFkyTh_CAW4utcyNwk$$AALS0oU1uC8z6uDj1KrLh##line_item_num", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##_fivetran_synced", "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx##doc_curr_amt", "t-QJFkyTh_CAW4utcyNwk$$AALS0oU1uC8z6uDj1KrLh##purchase_ord_num", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##doc_type", "t-QJFkyTh_CAW4utcyNwk$$AALS0oU1uC8z6uDj1KrLh##item_quant", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##client", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##company_code", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##fiscal_year", "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx##vendor_num", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##_loadtimestamp", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##_filename", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##tran_post_date", "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx##tran_amt", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##user_name", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##tran_curr_key", "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx##client_id", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##curr_type2", "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx##tax_amt_local_curr", "t-QJFkyTh_CAW4utcyNwk$$AALS0oU1uC8z6uDj1KrLh##record_plant_code", "g3XxCH-5FnLmxCiMgGDzh$$eKY08egQYsFCtfgPVZipV##ind_spl_post", "Y1EFsx8SOvS8mUP6fAW6c$$k2cpHBfKJ3GrVW13K2tYx##amt_locl_currency" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Join",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "TP9pU5mhm23pwvnqFrAV8$$VoQ6viwQkay8ceBGno1_e" : {
+      "id" : "TP9pU5mhm23pwvnqFrAV8$$VoQ6viwQkay8ceBGno1_e",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_silver_bkpf_tbl",
+        "slug" : "ds_silver_bkpf_tbl",
+        "x" : -300,
+        "y" : -280,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the DataFrame 'in0' as a Delta table named 'bkpf_tbl' in the silver layer.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Oqr-fUEskZVx66V8O_JZv$$k9fbuMLb7jKdnYfA8p93x",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "HjswI4-uloHPBpDns-n3k$$gVRM3YFW2VGRQVzVUzREg" : {
+      "id" : "HjswI4-uloHPBpDns-n3k$$gVRM3YFW2VGRQVzVUzREg",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_stg_hvr_rbkp",
+        "slug" : "ds_stg_hvr_rbkp",
+        "x" : -1420,
+        "y" : -120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Reads transaction data stored in the HVR directory and loads it into a DataFrame.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "gim2JSadp1J8HmBempyiH$$QD87yqGpxEK3a0m6xdBqZ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "bNKRql9lyA7MRlkWzrjf1$$NT23d3mHNbbL_kiuBo3bW" : {
+      "id" : "bNKRql9lyA7MRlkWzrjf1$$NT23d3mHNbbL_kiuBo3bW",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_rseg_tbl",
+        "slug" : "ds_rseg_tbl",
+        "x" : -960,
+        "y" : 40,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the input DataFrame as a Delta table, overwriting the schema if it already exists.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "fD41iA3dsiS57fsffK8yf$$nWeUHh5OeC9xh6trf8usm",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "zox3kS0lVqk4UR_BWk4v5$$zrcTxzPrutULZ0hnMIpMp" : {
+      "id" : "zox3kS0lVqk4UR_BWk4v5$$zrcTxzPrutULZ0hnMIpMp",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "filter_by_timestamp_comparison",
+        "slug" : "filter_by_timestamp_comparison",
+        "x" : 280,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Filters data based on a timestamp comparison, selecting records where the timestamp value in one column is greater than the timestamp value in another column.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "oaTLa_Zobtv_3Z99mOF7_$$yb3nXltZtpYF0TSm7SL19",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "taG6q1ega34vZWy00c_8J$$_m-igddfqd-op8qx0k7GM",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "'$slvr_bkpf_maxtsp' > '$gold_invoices_maxtsp'"
+        }
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Filter",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "-Kqwq6b5I13yWFDjQrRFL$$X3nCRNORX_WB9UZazDxX9" : {
+      "id" : "-Kqwq6b5I13yWFDjQrRFL$$X3nCRNORX_WB9UZazDxX9",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_bkpf_tbl",
+        "slug" : "ds_bkpf_tbl",
+        "x" : -960,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the DataFrame 'in0' as a Delta table named 'bkpf_tbl' in the bronze layer.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "IE8GRJIrvulecG6obE9II$$xxUeUn9e7SHMLaDbd_FtF",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.V5D5mY1Nn5gEgmkCA4lad$$4q3xJW3rciBmm5qyp33p0.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.OeiOSxZujUEwy26RX1KTg$$2v2dkApvl_y-zAuiRr7yH",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Reformat",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.7Lv5l0aXgMFYwDYmZAZq_$$FcDsFar_n0oB_QxCYK0mZ.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.jEo5I-sq0bkE0C-2oInFk$$wilWEJioijwYXyVn1o13N",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Reformat",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.kxr4429f3r5ukH4Vb88LQ$$4n7bTTN1qtKSndf_6IDmz",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Filter",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.N3JwO7GUswgTzLUrJiozv$$BE3Dx8QSSTXnT0IKmA4uc",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Filter",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.HjswI4-uloHPBpDns-n3k$$gVRM3YFW2VGRQVzVUzREg.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.-XDL08b8WRsbbNYOBBm5M$$a6K9Qj0ldocsj-uYKJyjo",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Reformat",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.hMP_Tx9JKWKmdyjWAKSSi$$1WRxGK24JY-WT2HagrCN6",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Filter",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.3Fqf8aGPVIgmjGPo8juLL$$pDAYu6KqU9V5AQ0LqwyJm",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.3Fqf8aGPVIgmjGPo8juLL$$pDAYu6KqU9V5AQ0LqwyJm.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.bNKRql9lyA7MRlkWzrjf1$$NT23d3mHNbbL_kiuBo3bW",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.bNKRql9lyA7MRlkWzrjf1$$NT23d3mHNbbL_kiuBo3bW.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.cZr6XNqNqaMzYWVP8pF1r$$-sbT9TfvO2FIVELqo9OvU.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.exsdmfp9tAEGnWdmAxRZ_$$58IJFIwwzugOOUUTsPuJ2.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.4o8J3PPkJjNmxDlFjw6M1$$NxWS2qigsOjlW7MhVVR15.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.Ld8gScO_EdYXmjsmpbSex$$Gr4j_dPNLTen1gmCBxb0Z",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Join",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.zox3kS0lVqk4UR_BWk4v5$$zrcTxzPrutULZ0hnMIpMp",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Filter",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.-Kqwq6b5I13yWFDjQrRFL$$X3nCRNORX_WB9UZazDxX9",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.-Kqwq6b5I13yWFDjQrRFL$$X3nCRNORX_WB9UZazDxX9.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.66ov4IfT8-hpjdaoM9EKp$$dARJNFp237qJTtOm30Dz2.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.aF00isey0DXQK2Ow5ir8P$$oqnL7PuHBR1a0FsS2x7xj",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Reformat",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.hthIvP-YmciSQz6pFAJ89$$0KvLzMU6Yd4y-IlRdhH83",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Filter",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.RtLWkoIwBEZS4LUqS-_4U$$PTxfRirWy-Q27oHwHxz6O",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.RtLWkoIwBEZS4LUqS-_4U$$PTxfRirWy-Q27oHwHxz6O.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.3TCdsP01qTbknmitSuiux$$WE_G8UFGY114KIazohgun.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.vjxNvgOta3zrQGgt_boei$$kW0YjHGDcALBAvNVxDYk0.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.k9QbxC-ZmlYSlQDNmji8b$$9hEccE6hj4Q0t3rWwMoNh",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Reformat",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.KGM6vbv12vl3ZKuf3HHpa$$5g86Oq2nV4jZDUcEQXdL0",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Filter",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.w3gc-83e7oZzLsbnhQNym$$Ey2DYuRpn5jCLPB8fy91B",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.w3gc-83e7oZzLsbnhQNym$$Ey2DYuRpn5jCLPB8fy91B.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.OlAk7HtvIf0hX2e-BNRXG$$xVmR8MpmkrAPP3eHdkHTR",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Reformat",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.DImNLRCivE_c8-guuELcY$$igD9Xb9qXYolLWvrWpKHR",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Filter",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.TP9pU5mhm23pwvnqFrAV8$$VoQ6viwQkay8ceBGno1_e",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.TP9pU5mhm23pwvnqFrAV8$$VoQ6viwQkay8ceBGno1_e.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.eEcLTBTpHaK6fhGcUAGj1$$MxaR2lAoYLt-A1xks-Alm",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.eEcLTBTpHaK6fhGcUAGj1$$MxaR2lAoYLt-A1xks-Alm.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.VT26OoqeIUZJLE2IERfUz$$GHB_8zcGAqQoaUhqVaGcD",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.VT26OoqeIUZJLE2IERfUz$$GHB_8zcGAqQoaUhqVaGcD.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
+}

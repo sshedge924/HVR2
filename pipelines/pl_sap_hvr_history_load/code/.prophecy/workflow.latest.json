@@ -1,0 +1,4931 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "functions" : { },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.0.31",
+        "pyPiVersion" : "1.9.9"
+      }
+    },
+    "id" : "1",
+    "uri" : "pipelines/pl_sap_hvr_history_load",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "pl_sap_hvr_history_load",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true
+    },
+    "language" : "python",
+    "fabricId" : "10064",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "santoshcloudaeonnetteam.erphvrpoc2.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "pl_sap_hvr_history_load",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "ipEvtMXVXae_Xjxx8sS1C",
+    "source" : "OqUrOqsVbHWHHsyxpn7Z7$$Ci8zUWOALYCc-ynQMFeZL",
+    "sourcePort" : "qMv4oH7beohS3ybrRtVYL$$_diGXMlR9rCXVfhPWrxs5",
+    "target" : "2RZ2-tOH0haqvPhn1lQGO$$fkHilVlgYPT3G5VHo9PMG",
+    "targetPort" : "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV"
+  }, {
+    "id" : "miSyLMl9jSQgFmdiGtUEY",
+    "source" : "uOV8aroRR46LT6MCgiWoF$$72M5cd15iaZpOUd0mcslA",
+    "sourcePort" : "QFaUSDvtMiFSdBaBMiS94$$MYfg52ThUjZ2O-sRAvkag",
+    "target" : "5JunAj4Hg2_8LYJJWErmA$$l5zCanQWen8G25Jjfnlrr",
+    "targetPort" : "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X"
+  }, {
+    "id" : "vZjkTOafvM9ZyACKxcDEE",
+    "source" : "N71kgUT9pwSkoejK7CtR2$$0MpcZ8s8dBuNcY9nZ_RJg",
+    "sourcePort" : "0p0SrMmodS0j7h6OOPOOK$$gIJnVVgNthPCqrsUkPrmi",
+    "target" : "Lmp9C387H9vxy8dUP2OWz$$By14XWM5dIKOZBRsG5jfh",
+    "targetPort" : "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f"
+  }, {
+    "id" : "0GdXEovOA161P39_COeF1",
+    "source" : "anlozztwAyvqrOi7VOaG5$$qnQmin6lFbgilXUt5-yO1",
+    "sourcePort" : "EsXCGLmk1NVOrux1fj7UW$$Kez-QtjXzlJxWH6oWpg9x",
+    "target" : "mb0yWgB-KfJi0Hib9YNvJ$$QM-zKmR_KHq_XrU5v5Yta",
+    "targetPort" : "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG"
+  }, {
+    "id" : "1hrawYh2eLvcT8gB2ZsJA",
+    "source" : "JAH7sSPq0gEgqk5DnP99h$$WjfFXIHK0foGU1RNTfcCF",
+    "sourcePort" : "ee7gd9pTNWVmwkjjerB7w$$fwL8fb6SAGDYYuX2qUCzL",
+    "target" : "IVv_cAWDz53OKP04vMviG$$5kTGYEAPp9jRm_wgehMgd",
+    "targetPort" : "sr9emU9MpVpDOq-JC0yOm$$XwahfVSIVtI2wi1zja7S2"
+  }, {
+    "id" : "NyM_eoa1Q4DKcKtDrB6T6",
+    "source" : "mb0yWgB-KfJi0Hib9YNvJ$$QM-zKmR_KHq_XrU5v5Yta",
+    "sourcePort" : "_MUJMZsX2-oZ_7iuJqpE7$$BfBPqLyVRe9fXRZg7526n",
+    "target" : "O40repHd7FD9tkQTFNXDt$$RaiXWUkRusvyxGqvV60f0",
+    "targetPort" : "bkwBLKtQS2wvF9Qi3aafB$$K4CWtOJcAleAXBJU_KJr9"
+  }, {
+    "id" : "bvvaOpMfConjIrlxckmQu",
+    "source" : "IVv_cAWDz53OKP04vMviG$$5kTGYEAPp9jRm_wgehMgd",
+    "sourcePort" : "iTEYeqZ8XziLrZjAK9m5D$$aUfrrIfWsC5ohuxcP5oYP",
+    "target" : "xq8opnboZQ_u-kvMsonzU$$ey5jRH0f6XvUQKRCl_401",
+    "targetPort" : "i6whm3lc2GcMVRrcN_JC-$$5RHmzPJq4hM4V7Dc71dzH"
+  }, {
+    "id" : "Oku-YtWZAs4hnsbmqMoL6",
+    "source" : "RvtO4_c9PK5Q6iG-7odzn$$KT7VCA2plxKbl8wSVL3Vt",
+    "sourcePort" : "dV_T4bo9ES7xttUt_A9u_$$9Zk7fB3CGUimVJx4GJt7D",
+    "target" : "TauTOgUMbnmRchnCdHMAO$$oMwckgAvRxVazAGzcfOLx",
+    "targetPort" : "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn"
+  }, {
+    "id" : "IGmR0gdn8sqUu000EsqRX",
+    "source" : "VB9eYvYjz0C3xxhsIH-pe$$SqBB0ue9bC1afUCREjrLl",
+    "sourcePort" : "LUU6ICHoceao8WCZbfKf-$$GvONCSQuzED-2G79LjxP3",
+    "target" : "TauTOgUMbnmRchnCdHMAO$$oMwckgAvRxVazAGzcfOLx",
+    "targetPort" : "p8eo0JmzjP3BN2MxHeLbZ$$my2orl47ntVBxz6PpZt9C"
+  }, {
+    "id" : "UwWEPAP5-2g5M1f7eltgH",
+    "source" : "TTDCyIfexqKIAM3CUQO3f$$stgTPufr8WixdRbFl4GzV",
+    "sourcePort" : "HpB4LHCOgzzfttmfysodh$$b2wCCoB2JUtpwkCpHrHBl",
+    "target" : "TauTOgUMbnmRchnCdHMAO$$oMwckgAvRxVazAGzcfOLx",
+    "targetPort" : "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd"
+  }, {
+    "id" : "F04eTfJafOqnCGd_zx1tJ",
+    "source" : "TauTOgUMbnmRchnCdHMAO$$oMwckgAvRxVazAGzcfOLx",
+    "sourcePort" : "SEyR8ALN7iF-yog5k_LNf$$VjNy7a4OPGM3K4kfYDXve",
+    "target" : "EgNPVKSNesDS4nhe7LK3w$$8r54m7Iqcd0eSVnS5TqCJ",
+    "targetPort" : "Q8CZlqUYqUxTTanMjAh6d$$2BzD-Tb3W_8MzNWyVtj45"
+  }, {
+    "id" : "U3vUIxFtDAsqALdPbXVmT",
+    "source" : "TauTOgUMbnmRchnCdHMAO$$oMwckgAvRxVazAGzcfOLx",
+    "sourcePort" : "SEyR8ALN7iF-yog5k_LNf$$VjNy7a4OPGM3K4kfYDXve",
+    "target" : "WqkbE4NfORCMflHr4Qugu$$BSdm-myjXOI-Ru7K47I8W",
+    "targetPort" : "z1wOu0qRNYLuBaM4GFfiM$$foW5vFiCOGDgcFDdpCf2U"
+  }, {
+    "id" : "6eGZHHRh1MwRzmOZAOsha",
+    "source" : "xVSuGQvtPQuUlxwxR2_et$$u6XFz4dn34s-tLlWINdA9",
+    "sourcePort" : "-D9-cqBkKeCazDgauObdq$$i5YArGAPApNpgcSLx_4YL",
+    "target" : "BcSu7ET-tyzDLaw_C_Gl6$$F70lXqR3om_12sokNXxK3",
+    "targetPort" : "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W"
+  }, {
+    "id" : "nmXHg-xXeybbmu2Yd67TO",
+    "source" : "5JunAj4Hg2_8LYJJWErmA$$l5zCanQWen8G25Jjfnlrr",
+    "sourcePort" : "ZW7twU3HAEW3kWJmwEhKC$$bxxEpxaRhrocXjIWhdbAY",
+    "target" : "N3-Nv65hm6cua2BvY66pO$$ObHiZWhq4tW-eW3rCCPKp",
+    "targetPort" : "sp8LtblCLcqono3gfialT$$dP3UpY-eyvO06rVNX1uQ5"
+  }, {
+    "id" : "BREPC7zHPL49XVlowcw2y",
+    "source" : "Lmp9C387H9vxy8dUP2OWz$$By14XWM5dIKOZBRsG5jfh",
+    "sourcePort" : "HQaecXUtbmLmdwct6h4X7$$Twr7KaaeMBpz7fZLKnNQ2",
+    "target" : "-Ja_e3zXJWqcZghDrh6Yp$$AbOeyDIUluQ5xALEybUmQ",
+    "targetPort" : "vwuI_gPkJJonrdjrvZyLd$$uyxWIXeFIQRn6WBa9e_cf"
+  }, {
+    "id" : "RmBTLjVIXNwfKPNXVbtDE",
+    "source" : "BcSu7ET-tyzDLaw_C_Gl6$$F70lXqR3om_12sokNXxK3",
+    "sourcePort" : "1XypeKspDAhpZxkAlTcsq$$QXwYy05FOga0D17cpu2rC",
+    "target" : "9emEvFROdp-wGLAEY2Awt$$3s8CCXSbHDqROVDMkyNJb",
+    "targetPort" : "HBREeBAKAkaN4L9ykOtds$$yG8mqFHBk7OT3q8wCLAJm"
+  }, {
+    "id" : "qO1xRcgx3Af_qgBPxgKRy",
+    "source" : "2RZ2-tOH0haqvPhn1lQGO$$fkHilVlgYPT3G5VHo9PMG",
+    "sourcePort" : "_uVxc8v0xGHvsGKpJ45P9$$U3cshNgPDyeCi6CRYCcII",
+    "target" : "nzyNkDz8Bz0bclwLVRTNt$$AjHw00KCcl7qN6n8L7qOk",
+    "targetPort" : "smEl4abRlXl_CPSvCVLGW$$OeYQpkEiDBzorNRiILcfG"
+  }, {
+    "id" : "XvYfhZ5RZBO52t0qf7kVz",
+    "source" : "nzyNkDz8Bz0bclwLVRTNt$$AjHw00KCcl7qN6n8L7qOk",
+    "sourcePort" : "S6x9kVW7gBHZjGiGlpEKO$$GFDSLQoANqpXW8MArFGGd",
+    "target" : "CfMq1-0q46P2fghESLPgL$$NCraWsMhXpoS3wjitvsh8",
+    "targetPort" : "N8H8cZO5XSJPOzTInDsmI$$MvgI_FSXt9KcHVODS-Grf"
+  } ],
+  "processes" : {
+    "Lmp9C387H9vxy8dUP2OWz$$By14XWM5dIKOZBRsG5jfh" : {
+      "id" : "Lmp9C387H9vxy8dUP2OWz$$By14XWM5dIKOZBRsG5jfh",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ref_RSEG",
+        "slug" : "ref_RSEG",
+        "x" : -1060,
+        "y" : -20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Transforms and standardizes financial transaction data for better reporting and analysis.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "HQaecXUtbmLmdwct6h4X7$$Twr7KaaeMBpz7fZLKnNQ2",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "belnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "line_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "buzei"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gjahr"
+          },
+          "description" : ""
+        }, {
+          "target" : "client_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mandt"
+          },
+          "description" : ""
+        }, {
+          "target" : "reversal_doc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mrmok"
+          },
+          "description" : ""
+        }, {
+          "target" : "debit_credit_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "shkzg"
+          },
+          "description" : ""
+        }, {
+          "target" : "bal_amt_aftertrans",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "salk3"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_theme",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fsh_theme"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_acc_class",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bklas"
+          },
+          "description" : ""
+        }, {
+          "target" : "cum_tran_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "vrkum"
+          },
+          "description" : ""
+        }, {
+          "target" : "wrf_characterustic1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wrf_charstc1"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_material_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "matbf"
+          },
+          "description" : ""
+        }, {
+          "target" : "purch_ord_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ebelp"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_quantity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bpmng"
+          },
+          "description" : ""
+        }, {
+          "target" : "recon_account",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "re_account"
+          },
+          "description" : ""
+        }, {
+          "target" : "stock_move_post_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bstme"
+          },
+          "description" : ""
+        }, {
+          "target" : "stock_move_post_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stock_posting_pp"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_gl_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrt"
+          },
+          "description" : ""
+        }, {
+          "target" : "condition_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kschl"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_charges_post_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bnkan"
+          },
+          "description" : ""
+        }, {
+          "target" : "del_note_ref_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lfbnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_post_period",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bustw"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lfgja"
+          },
+          "description" : ""
+        }, {
+          "target" : "vendor_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lifnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "srv_map_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "srvmapkey"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_status_num_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stunr"
+          },
+          "description" : ""
+        }, {
+          "target" : "return_due_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "retduedt"
+          },
+          "description" : ""
+        }, {
+          "target" : "subseg_cat",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sgt_scat"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_curr_ret_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rbwwr"
+          },
+          "description" : ""
+        }, {
+          "target" : "srm_contract_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "srm_contract_itm"
+          },
+          "description" : ""
+        }, {
+          "target" : "record_plant_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "werks"
+          },
+          "description" : ""
+        }, {
+          "target" : "purchase_ord_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ebeln"
+          },
+          "description" : ""
+        }, {
+          "target" : "erp_contract_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "erp_contract_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "record_group_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrp"
+          },
+          "description" : ""
+        }, {
+          "target" : "record_company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bukrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_gl_tran_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tbtkz"
+          },
+          "description" : ""
+        }, {
+          "target" : "purch_doc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "exkbe"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_stock_reason",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrg"
+          },
+          "description" : ""
+        }, {
+          "target" : "batch_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "charg"
+          },
+          "description" : ""
+        }, {
+          "target" : "del_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lfpos"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_grp_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrc"
+          },
+          "description" : ""
+        }, {
+          "target" : "package_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "packno"
+          },
+          "description" : ""
+        }, {
+          "target" : "warehouse_receipt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "werec"
+          },
+          "description" : ""
+        }, {
+          "target" : "bus_proc_ref",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bprbm"
+          },
+          "description" : ""
+        }, {
+          "target" : "valuation_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bwtar"
+          },
+          "description" : ""
+        }, {
+          "target" : "posting_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "pstyp"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_relevance_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xrettaxnet"
+          },
+          "description" : ""
+        }, {
+          "target" : "life_valuation_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xlifo"
+          },
+          "description" : ""
+        }, {
+          "target" : "del_billing_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lfehl"
+          },
+          "description" : ""
+        }, {
+          "target" : "special_gl_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kzmek"
+          },
+          "description" : ""
+        }, {
+          "target" : "fasion_season_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fsh_season_year"
+          },
+          "description" : ""
+        }, {
+          "target" : "supp_rel_contract_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "srm_contract_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_proc_key_grp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "diff_amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "diff_amount"
+          },
+          "description" : ""
+        }, {
+          "target" : "mat_spl_proc_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrm"
+          },
+          "description" : ""
+        }, {
+          "target" : "wrf_charsteristic3",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wrf_charstc3"
+          },
+          "description" : ""
+        }, {
+          "target" : "company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bwkey"
+          },
+          "description" : ""
+        }, {
+          "target" : "cum_quantity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lbkum"
+          },
+          "description" : ""
+        }, {
+          "target" : "inventory_rel_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "invrel"
+          },
+          "description" : ""
+        }, {
+          "target" : "purch_document_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xekbz"
+          },
+          "description" : ""
+        }, {
+          "target" : "stock_post_amt_prevyear",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stock_posting_py"
+          },
+          "description" : ""
+        }, {
+          "target" : "cont_post_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cont_pstyp"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wrbtr"
+          },
+          "description" : ""
+        }, {
+          "target" : "post_description",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sgtxt"
+          },
+          "description" : ""
+        }, {
+          "target" : "stock_posting_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stock_posting"
+          },
+          "description" : ""
+        }, {
+          "target" : "special_group_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrq"
+          },
+          "description" : ""
+        }, {
+          "target" : "invoice_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xdinv"
+          },
+          "description" : ""
+        }, {
+          "target" : "sales_value",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "vmsal"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_grp_indicator",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrv"
+          },
+          "description" : ""
+        }, {
+          "target" : "goods_invrecpt_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "grirg"
+          },
+          "description" : ""
+        }, {
+          "target" : "rev_goods_move_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xrueb"
+          },
+          "description" : ""
+        }, {
+          "target" : "qty_goods_intrans",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rbmng"
+          },
+          "description" : ""
+        }, {
+          "target" : "goods_move_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gityp"
+          },
+          "description" : ""
+        }, {
+          "target" : "complaint_reason",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "complaint_reason"
+          },
+          "description" : ""
+        }, {
+          "target" : "hist_material_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xhistma"
+          },
+          "description" : ""
+        }, {
+          "target" : "complaint_reason_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zekkn"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_unit_of_measure",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "meins"
+          },
+          "description" : ""
+        }, {
+          "target" : "inv_item_origin",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "inv_itm_origin"
+          },
+          "description" : ""
+        }, {
+          "target" : "cross_comp_post_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xcprf"
+          },
+          "description" : ""
+        }, {
+          "target" : "license_no_item",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "licno"
+          },
+          "description" : ""
+        }, {
+          "target" : "ext_spl_purpose_group",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spgrext"
+          },
+          "description" : ""
+        }, {
+          "target" : "wrf_characteristic2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wrf_charstc2"
+          },
+          "description" : ""
+        }, {
+          "target" : "material_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "matnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "internal_row_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "introw"
+          },
+          "description" : ""
+        }, {
+          "target" : "basic_unit_of_measure",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bprme"
+          },
+          "description" : ""
+        }, {
+          "target" : "grp_ofitems_code_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gricd"
+          },
+          "description" : ""
+        }, {
+          "target" : "fashion_season",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fsh_season"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_reference_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "frbnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_spl_handling_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xskrl"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_quant",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "menge"
+          },
+          "description" : ""
+        }, {
+          "target" : "percent_ret_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "retpc"
+          },
+          "description" : ""
+        }, {
+          "target" : "line_item_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zeile"
+          },
+          "description" : ""
+        }, {
+          "target" : "taxation_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mwskz"
+          },
+          "description" : ""
+        }, {
+          "target" : "fasion_collection",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fsh_collection"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_numbering_counter",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zaehk"
+          },
+          "description" : ""
+        }, {
+          "target" : "rev_doc_indicator",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "erekz"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_doc_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xblnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "erp_contract_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "erp_contract_itm"
+          },
+          "description" : ""
+        }, {
+          "target" : "ret_amt_for_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "retamt_fc"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_juris_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "txjcd"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_grp_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "knttp"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_deleted",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_fivetran_deleted"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_format(_fivetran_synced, 'yyyy-MM-dd HH:mm:ss')"
+          },
+          "description" : ""
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_format(current_timestamp(), 'yyyy-MM-dd HH:mm:ss')"
+          },
+          "description" : ""
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "split(input_file_name(), '/')[4]"
+          },
+          "description" : ""
+        }, {
+          "target" : "_file_timestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CAST(SUBSTRING(split(input_file_name(), '/')[4], 1, 14) AS LONG)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##xrettaxnet", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##lifnr", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##stock_posting_pp", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##fsh_season_year", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##inv_itm_origin", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##werec", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##menge", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##lbkum", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##spgrm", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##vmsal", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##xekbz", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##sgtxt", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##fsh_collection", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##salk3", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##xrueb", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##shkzg", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##grirg", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##srvmapkey", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##kzmek", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##rbwwr", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##xhistma", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##zaehk", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##kschl", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##spgrs", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##pstyp", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##wrbtr", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##bnkan", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##gjahr", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##xcprf", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##spgrt", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##licno", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##fsh_season", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##spgrext", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##diff_amount", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##invrel", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##buzei", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##_fivetran_deleted", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##spgrp", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##rbmng", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##xblnr", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##matbf", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##meins", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##bprme", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##erp_contract_itm", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##xskrl", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##frbnr", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##wrf_charstc2", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##erekz", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##bstme", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##vrkum", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##bustw", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##txjcd", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##bwkey", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##introw", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##knttp", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##stock_posting_py", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##retpc", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##gityp", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##lfbnr", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##bukrs", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##spgrq", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##retduedt", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##lfehl", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##belnr", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##spgrv", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##zekkn", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##bprbm", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##bpmng", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##matnr", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##cont_pstyp", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##lfgja", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##packno", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##spgrg", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##_fivetran_synced", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##wrf_charstc3", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##charg", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##wrf_charstc1", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##ebelp", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##bklas", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##gricd", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##erp_contract_id", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##mandt", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##mwskz", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##bwtar", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##mrmok", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##zeile", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##complaint_reason", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##xdinv", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##ebeln", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##stunr", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##fsh_theme", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##xlifo", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##srm_contract_id", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##retamt_fc", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##tbtkz", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##stock_posting", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##spgrc", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##lfpos", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##srm_contract_itm", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##exkbe", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##re_account", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##werks", "xTLcWRK_CfBAvZGsF3JcO$$wN595HnNINsdBHUa2E89f##sgt_scat" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "TTDCyIfexqKIAM3CUQO3f$$stgTPufr8WixdRbFl4GzV" : {
+      "id" : "TTDCyIfexqKIAM3CUQO3f$$stgTPufr8WixdRbFl4GzV",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_silver_bkpf_tbl_1",
+        "slug" : "ds_silver_bkpf_tbl_1",
+        "x" : -140,
+        "y" : -340,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "HpB4LHCOgzzfttmfysodh$$b2wCCoB2JUtpwkCpHrHBl",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "WqkbE4NfORCMflHr4Qugu$$BSdm-myjXOI-Ru7K47I8W" : {
+      "id" : "WqkbE4NfORCMflHr4Qugu$$BSdm-myjXOI-Ru7K47I8W",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_adls_gold_csv",
+        "slug" : "ds_adls_gold_csv",
+        "x" : 220,
+        "y" : -160,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Writes the input DataFrame to a CSV file with specified options, and then concatenates the generated CSV file with an existing file.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "z1wOu0qRNYLuBaM4GFfiM$$foW5vFiCOGDgcFDdpCf2U",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "TauTOgUMbnmRchnCdHMAO$$oMwckgAvRxVazAGzcfOLx" : {
+      "id" : "TauTOgUMbnmRchnCdHMAO$$oMwckgAvRxVazAGzcfOLx",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "join_documents",
+        "slug" : "join_documents",
+        "x" : 40,
+        "y" : -340,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Joins multiple documents based on common document numbers and fiscal years, consolidating relevant information from each document into a single DataFrame.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd",
+          "slug" : "in0"
+        }, {
+          "id" : "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn",
+          "slug" : "in1"
+        }, {
+          "id" : "p8eo0JmzjP3BN2MxHeLbZ$$my2orl47ntVBxz6PpZt9C",
+          "slug" : "in2"
+        } ],
+        "outputs" : [ {
+          "id" : "SEyR8ALN7iF-yog5k_LNf$$VjNy7a4OPGM3K4kfYDXve",
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "doc_number",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "user_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "company_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "fiscal_year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "client",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_spl_post",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "doc_type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "curr_type2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "tran_post_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "tran_curr_key",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "post_date_month",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "doc_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "client_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reversal_doc_ind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "doc_curr_amt",
+              "type" : "decimal(13,2)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "vendor_num",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "amt_locl_currency",
+              "type" : "decimal(3,0)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "tax_amt_local_curr",
+              "type" : "decimal(13,2)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "tran_amt",
+              "type" : "decimal(3,0)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "tax_category",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "line_item_num",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "item_quant",
+              "type" : "decimal(13,3)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "record_plant_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_ord_num",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_loadtimestamp",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_filename",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_file_timestamp",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_number = in1.doc_number and in0.fiscal_year = in1.fiscal_year"
+          },
+          "joinType" : "left_outer"
+        }, {
+          "alias" : "in2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_number = in2.doc_number and in0.fiscal_year = in2.fiscal_year"
+          },
+          "joinType" : "left_outer"
+        } ],
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_number"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "user_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.user_name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.company_code"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.fiscal_year"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "client",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.client"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ind_spl_post",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ind_spl_post"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_type"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "curr_type2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.curr_type2"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "tran_post_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.tran_post_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "tran_curr_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.tran_curr_key"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "post_date_month",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.post_date_month"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "doc_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "client_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.client_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "reversal_doc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.reversal_doc_ind"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "doc_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.doc_curr_amt"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "vendor_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.vendor_num"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "amt_locl_currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.amt_locl_currency"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "tax_amt_local_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.tax_amt_local_curr"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "tran_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.tran_amt"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "tax_category",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.tax_category"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "line_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in2.line_item_num"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "item_quant",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in2.item_quant"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "record_plant_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in2.record_plant_code"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "purchase_ord_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in2.purchase_ord_num"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0._fivetran_synced"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0._loadtimestamp"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0._filename"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "_file_timestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0._file_timestamp"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "hints" : [ {
+          "id" : "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "p8eo0JmzjP3BN2MxHeLbZ$$my2orl47ntVBxz6PpZt9C",
+          "alias" : "in2",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "p8eo0JmzjP3BN2MxHeLbZ$$my2orl47ntVBxz6PpZt9C##doc_number", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##doc_number", "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn##fiscal_year", "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn##doc_number", "p8eo0JmzjP3BN2MxHeLbZ$$my2orl47ntVBxz6PpZt9C##fiscal_year", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##fiscal_year", "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn##tax_amt_local_curr", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##client", "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn##amt_locl_currency", "p8eo0JmzjP3BN2MxHeLbZ$$my2orl47ntVBxz6PpZt9C##line_item_num", "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn##tax_category", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##_filename", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##fiscal_year", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##doc_type", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##tran_curr_key", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##tran_post_date", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##company_code", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##doc_number", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##curr_type2", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##_fivetran_synced", "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn##reversal_doc_ind", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##post_date_month", "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn##vendor_num", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##ind_spl_post", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##doc_date", "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn##tran_amt", "p8eo0JmzjP3BN2MxHeLbZ$$my2orl47ntVBxz6PpZt9C##record_plant_code", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##user_name", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##_loadtimestamp", "p8eo0JmzjP3BN2MxHeLbZ$$my2orl47ntVBxz6PpZt9C##purchase_ord_num", "WiXrBInEujsmImI3W_3y1$$Edtp0DXVkl1YjAk-agfNd##_file_timestamp", "p8eo0JmzjP3BN2MxHeLbZ$$my2orl47ntVBxz6PpZt9C##item_quant", "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn##doc_curr_amt", "LyIJhCHGU2wLiO5n4uxgI$$RYQcPVYL7Ri71cw8PgFrn##client_id" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Join",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "EgNPVKSNesDS4nhe7LK3w$$8r54m7Iqcd0eSVnS5TqCJ" : {
+      "id" : "EgNPVKSNesDS4nhe7LK3w$$8r54m7Iqcd0eSVnS5TqCJ",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_gold_invoices_tbl",
+        "slug" : "ds_gold_invoices_tbl",
+        "x" : 220,
+        "y" : -340,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the DataFrame as a Delta table named 'invoices_tbl' in the 'erp_gold' database, providing a reliable and efficient storage solution for invoice data.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Q8CZlqUYqUxTTanMjAh6d$$2BzD-Tb3W_8MzNWyVtj45",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "OqUrOqsVbHWHHsyxpn7Z7$$Ci8zUWOALYCc-ynQMFeZL" : {
+      "id" : "OqUrOqsVbHWHHsyxpn7Z7$$Ci8zUWOALYCc-ynQMFeZL",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_stg_hvr_bkpf",
+        "slug" : "ds_stg_hvr_bkpf",
+        "x" : -1220,
+        "y" : -340,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Reads transaction data from a Parquet file.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "qMv4oH7beohS3ybrRtVYL$$_diGXMlR9rCXVfhPWrxs5",
+          "slug" : "out",
+          "dataExplorerProps" : {
+            "filter" : {
+              "type" : "Composite",
+              "op" : {
+                "type" : "AND"
+              },
+              "filters" : [ ]
+            },
+            "sorts" : [ ]
+          }
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "N3-Nv65hm6cua2BvY66pO$$ObHiZWhq4tW-eW3rCCPKp" : {
+      "id" : "N3-Nv65hm6cua2BvY66pO$$ObHiZWhq4tW-eW3rCCPKp",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_rbkp_tbl",
+        "slug" : "ds_rbkp_tbl",
+        "x" : -880,
+        "y" : -180,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the input DataFrame as a Delta table named 'rbkp_tbl' in the 'erp_bronze' database, allowing for efficient storage and querying of the data.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sp8LtblCLcqono3gfialT$$dP3UpY-eyvO06rVNX1uQ5",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "nzyNkDz8Bz0bclwLVRTNt$$AjHw00KCcl7qN6n8L7qOk" : {
+      "id" : "nzyNkDz8Bz0bclwLVRTNt$$AjHw00KCcl7qN6n8L7qOk",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "filter_deleted_records",
+        "slug" : "filter_deleted_records",
+        "x" : -920,
+        "y" : -340,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Isolates records marked for deletion, ensuring data integrity by removing unwanted entries.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "smEl4abRlXl_CPSvCVLGW$$OeYQpkEiDBzorNRiILcfG",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "S6x9kVW7gBHZjGiGlpEKO$$GFDSLQoANqpXW8MArFGGd",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "smEl4abRlXl_CPSvCVLGW$$OeYQpkEiDBzorNRiILcfG##_fivetran_deleted" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "_fivetran_deleted = true"
+        }
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Filter",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "5JunAj4Hg2_8LYJJWErmA$$l5zCanQWen8G25Jjfnlrr" : {
+      "id" : "5JunAj4Hg2_8LYJJWErmA$$l5zCanQWen8G25Jjfnlrr",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ref_RBKP",
+        "slug" : "ref_RBKP",
+        "x" : -1060,
+        "y" : -180,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Standardizes and renames columns in financial transaction data for better clarity and consistency.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "ZW7twU3HAEW3kWJmwEhKC$$bxxEpxaRhrocXjIWhdbAY",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "belnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gjahr"
+          },
+          "description" : ""
+        }, {
+          "target" : "client_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mandt"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_exch_rate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ctxkrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "amount_loc_currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "makzn"
+          },
+          "description" : ""
+        }, {
+          "target" : "lot_type_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lotkz"
+          },
+          "description" : ""
+        }, {
+          "target" : "fin_tran_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fityp"
+          },
+          "description" : ""
+        }, {
+          "target" : "location",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ort01"
+          },
+          "description" : ""
+        }, {
+          "target" : "po_box",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "pfach"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_posting_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "budat"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_ac_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "beznk"
+          },
+          "description" : ""
+        }, {
+          "target" : "branch_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "brnch"
+          },
+          "description" : ""
+        }, {
+          "target" : "fis_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stjah"
+          },
+          "description" : ""
+        }, {
+          "target" : "data_entry_time",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cputm"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kursx"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_tran_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "txjcd_bnk"
+          },
+          "description" : ""
+        }, {
+          "target" : "user_who_copied",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "copy_user"
+          },
+          "description" : ""
+        }, {
+          "target" : "stock_transfer_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stkzn"
+          },
+          "description" : ""
+        }, {
+          "target" : "postal_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "pstlz"
+          },
+          "description" : ""
+        }, {
+          "target" : "xcomp_code_post_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xcpdk"
+          },
+          "description" : ""
+        }, {
+          "target" : "inv_tran_entry",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "inv_tran"
+          },
+          "description" : ""
+        }, {
+          "target" : "sec_cost_centre",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "secco"
+          },
+          "description" : ""
+        }, {
+          "target" : "fix_asset_tag_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fdtag"
+          },
+          "description" : ""
+        }, {
+          "target" : "ext_goods_rcpt_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xegdr"
+          },
+          "description" : ""
+        }, {
+          "target" : "fix_asset_level",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fdlev"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_next_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "assign_next_date"
+          },
+          "description" : ""
+        }, {
+          "target" : "prepay_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "prepay_status"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_document_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xblnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "investment_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xinve"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_for_curr_tran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kursf"
+          },
+          "description" : ""
+        }, {
+          "target" : "prepay_loc_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "qsshb"
+          },
+          "description" : ""
+        }, {
+          "target" : "prepay_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "prepay_awkey"
+          },
+          "description" : ""
+        }, {
+          "target" : "third_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name3"
+          },
+          "description" : ""
+        }, {
+          "target" : "prepay_ref",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "uzawe"
+          },
+          "description" : ""
+        }, {
+          "target" : "foreign_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lieffn"
+          },
+          "description" : ""
+        }, {
+          "target" : "reversal_doc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xrech"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_copiedto_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "copy_by_year"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rmwwr"
+          },
+          "description" : ""
+        }, {
+          "target" : "vendor_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lifnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_salespurch_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xmwst"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_tran_taxcode",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mwskz_bnk"
+          },
+          "description" : ""
+        }, {
+          "target" : "bus_place_bank_tran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bupla"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_tran_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bvtyp"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_tax_coll",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "txkrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "for_curr_tax_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "qsfbt"
+          },
+          "description" : ""
+        }, {
+          "target" : "vendor_ac_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "knumvl"
+          },
+          "description" : ""
+        }, {
+          "target" : "assign_end_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "assign_end_date"
+          },
+          "description" : ""
+        }, {
+          "target" : "auto_pay_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xautakz"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_val_local_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wwert"
+          },
+          "description" : ""
+        }, {
+          "target" : "company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bukrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "tgt_doc_num_forcopying",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "copy_to_belnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_curr_tax_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wmwst2"
+          },
+          "description" : ""
+        }, {
+          "target" : "payment_method",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zlspr"
+          },
+          "description" : ""
+        }, {
+          "target" : "esr_refr_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "esrre"
+          },
+          "description" : ""
+        }, {
+          "target" : "withholding_tax_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wskto"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_exempt_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stceg"
+          },
+          "description" : ""
+        }, {
+          "target" : "street_address",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stras"
+          },
+          "description" : ""
+        }, {
+          "target" : "last_change_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cpudt"
+          },
+          "description" : ""
+        }, {
+          "target" : "billing_doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "filkd"
+          },
+          "description" : ""
+        }, {
+          "target" : "assignment_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zuonr"
+          },
+          "description" : ""
+        }, {
+          "target" : "for_trade_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "frgkz"
+          },
+          "description" : ""
+        }, {
+          "target" : "elect_data__intchg_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "egmld"
+          },
+          "description" : ""
+        }, {
+          "target" : "withholding_tax_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rebzj"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_gl_tran_tax_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "qsskz"
+          },
+          "description" : ""
+        }, {
+          "target" : "pay_ref_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zfbdt"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_tax_treat_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "j_1kftind"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_doc_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rebzg"
+          },
+          "description" : ""
+        }, {
+          "target" : "country_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "landl"
+          },
+          "description" : ""
+        }, {
+          "target" : "invoice_rcpt_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "reindat"
+          },
+          "description" : ""
+        }, {
+          "target" : "invoice_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ivtyp"
+          },
+          "description" : ""
+        }, {
+          "target" : "bus_area_taxpurpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "j_1kftbus"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_region",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "regio"
+          },
+          "description" : ""
+        }, {
+          "target" : "amt_locl_currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zbd3t"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_base_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "j_1tpbupl"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_amt_local_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wmwst1"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "dtaws"
+          },
+          "description" : ""
+        }, {
+          "target" : "cust_iden_um",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kidno"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "vgart"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zbd2t"
+          },
+          "description" : ""
+        }, {
+          "target" : "vat_calc_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "vatdate"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "blart"
+          },
+          "description" : ""
+        }, {
+          "target" : "second_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name2"
+          },
+          "description" : ""
+        }, {
+          "target" : "repr_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "j_1kfrepre"
+          },
+          "description" : ""
+        }, {
+          "target" : "vendor_acc_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "knumve"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_num4",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stcd4"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_regn_num_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stcdt"
+          },
+          "description" : ""
+        }, {
+          "target" : "pay_meth_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lzbkz"
+          },
+          "description" : ""
+        }, {
+          "target" : "logical_sys",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "logsys"
+          },
+          "description" : ""
+        }, {
+          "target" : "pay_block_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "pskto"
+          },
+          "description" : ""
+        }, {
+          "target" : "percent_tax_disc2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zbd2p"
+          },
+          "description" : ""
+        }, {
+          "target" : "entity_tax_iden",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stcd2"
+          },
+          "description" : ""
+        }, {
+          "target" : "esr_ref_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "esrnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "for_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "makzmw"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_currency_amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "arkuen"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_num_forclearing",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stblg"
+          },
+          "description" : ""
+        }, {
+          "target" : "amt_curr1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zbd1t"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_info",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xref3"
+          },
+          "description" : ""
+        }, {
+          "target" : "percent_curr1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zbd1p"
+          },
+          "description" : ""
+        }, {
+          "target" : "name_entry_creator",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ername"
+          },
+          "description" : ""
+        }, {
+          "target" : "amt_local_currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lieffmw"
+          },
+          "description" : ""
+        }, {
+          "target" : "data_copiedto_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "copy_to_year"
+          },
+          "description" : ""
+        }, {
+          "target" : "lang_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "spras"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_doc_text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xrbtx"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bankl"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_gl_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stkzu"
+          },
+          "description" : ""
+        }, {
+          "target" : "pay_method_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zlsch"
+          },
+          "description" : ""
+        }, {
+          "target" : "house_bank_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "hbkid"
+          },
+          "description" : ""
+        }, {
+          "target" : "emp_group",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "empfg"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_code2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mwskz2"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_acc_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bkont"
+          },
+          "description" : ""
+        }, {
+          "target" : "bus_partner_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "j_1bnftype"
+          },
+          "description" : ""
+        }, {
+          "target" : "recon_partner",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "repart"
+          },
+          "description" : ""
+        }, {
+          "target" : "sap_rel_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "saprl"
+          },
+          "description" : ""
+        }, {
+          "target" : "assign_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "assign_status"
+          },
+          "description" : ""
+        }, {
+          "target" : "user_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "usnam"
+          },
+          "description" : ""
+        }, {
+          "target" : "type_of_doc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "erfpr"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_curr+amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "arkuemw"
+          },
+          "description" : ""
+        }, {
+          "target" : "document_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bldat"
+          },
+          "description" : ""
+        }, {
+          "target" : "special_gl_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stkza"
+          },
+          "description" : ""
+        }, {
+          "target" : "business_area",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gsber"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_account_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bankn"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stcd1"
+          },
+          "description" : ""
+        }, {
+          "target" : "fixed_asset_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zbfix"
+          },
+          "description" : ""
+        }, {
+          "target" : "name_entity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name1"
+          },
+          "description" : ""
+        }, {
+          "target" : "payment_terms",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "zterm"
+          },
+          "description" : ""
+        }, {
+          "target" : "emp_feedback_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "empfb"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_discount_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "diekz"
+          },
+          "description" : ""
+        }, {
+          "target" : "rebate_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rbstat"
+          },
+          "description" : ""
+        }, {
+          "target" : "postal_code2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "pstl2"
+          },
+          "description" : ""
+        }, {
+          "target" : "bank_text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bktxt"
+          },
+          "description" : ""
+        }, {
+          "target" : "sal_title_person",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "anred"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_category",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mwskz1"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_code_identifier",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tcode"
+          },
+          "description" : ""
+        }, {
+          "target" : "document_num_copy",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "copy_by_belnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_iden_num3",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stcd3"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "hkont"
+          },
+          "description" : ""
+        }, {
+          "target" : "name4",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name4"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_payment_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "esrpz"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "dtams"
+          },
+          "description" : ""
+        }, {
+          "target" : "name_entry_creator2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "erfnam"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_bank_ref_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bkref"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_bank_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "banks"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_currency_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "waers"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_country_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "land1"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_desc_details",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sgtxt"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_deleted",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_fivetran_deleted"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_format(_fivetran_synced, 'yyyy-MM-dd HH:mm:ss')"
+          },
+          "description" : ""
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_format(current_timestamp(), 'yyyy-MM-dd HH:mm:ss')"
+          },
+          "description" : ""
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "split(input_file_name(), '/')[4]"
+          },
+          "description" : ""
+        }, {
+          "target" : "_file_timestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CAST(SUBSTRING(split(input_file_name(), '/')[4], 1, 14) AS LONG)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##stkza", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##_fivetran_deleted", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##ort01", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##bkref", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##zbd1t", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##stcd1", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##xref3", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##assign_status", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##qsskz", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##uzawe", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##banks", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##makzmw", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##usnam", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##xegdr", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##arkuemw", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##xinve", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##knumve", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##copy_by_belnr", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##stcd2", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##j_1kftbus", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##empfb", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##stras", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##zterm", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##bupla", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##pskto", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##_fivetran_synced", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##regio", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##gjahr", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##sgtxt", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##erfnam", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##rebzj", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##qsfbt", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##xrbtx", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##xblnr", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##anred", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##j_1kfrepre", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##dtaws", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##bukrs", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##mwskz_bnk", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##gsber", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##blart", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##copy_user", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##name4", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##waers", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##copy_to_belnr", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##stkzu", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##mwskz2", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##frgkz", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##prepay_awkey", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##zfbdt", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##lotkz", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##xrech", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##stcd3", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##j_1kftind", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##name3", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##secco", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##makzn", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##esrnr", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##j_1tpbupl", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##bvtyp", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##land1", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##inv_tran", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##stcd4", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##vatdate", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##wskto", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##diekz", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##wwert", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##xautakz", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##logsys", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##filkd", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##zlspr", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##dtams", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##landl", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##ctxkrs", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##cputm", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##zbd2p", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##erfpr", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##assign_end_date", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##bldat", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##rmwwr", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##egmld", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##vgart", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##repart", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##pfach", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##saprl", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##bankl", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##txjcd_bnk", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##ivtyp", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##arkuen", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##stceg", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##stcdt", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##mwskz1", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##name1", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##prepay_status", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##rebzg", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##zlsch", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##belnr", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##empfg", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##lifnr", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##pstlz", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##fdtag", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##esrpz", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##zuonr", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##stkzn", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##stjah", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##hbkid", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##wmwst2", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##name2", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##fdlev", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##brnch", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##wmwst1", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##zbd3t", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##copy_to_year", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##txkrs", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##qsshb", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##ername", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##rbstat", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##lieffn", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##tcode", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##zbfix", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##cpudt", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##lieffmw", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##stblg", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##bktxt", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##zbd2t", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##copy_by_year", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##assign_next_date", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##kursx", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##xmwst", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##kursf", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##beznk", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##spras", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##bkont", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##zbd1p", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##j_1bnftype", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##mandt", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##pstl2", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##xcpdk", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##bankn", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##esrre", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##lzbkz", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##hkont", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##reindat", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##fityp", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##budat", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##kidno", "317YuED-3M2sdMmYFhRyv$$jmrUpLXczGSzZTMNQmm8X##knumvl" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "9emEvFROdp-wGLAEY2Awt$$3s8CCXSbHDqROVDMkyNJb" : {
+      "id" : "9emEvFROdp-wGLAEY2Awt$$3s8CCXSbHDqROVDMkyNJb",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_silver_bkpf_tbl",
+        "slug" : "ds_silver_bkpf_tbl",
+        "x" : -300,
+        "y" : -340,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the DataFrame 'in0' as a Delta table named 'bkpf_tbl' in the 'erp_silver' database, providing a persistent storage for the data.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "HBREeBAKAkaN4L9ykOtds$$yG8mqFHBk7OT3q8wCLAJm",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "anlozztwAyvqrOi7VOaG5$$qnQmin6lFbgilXUt5-yO1" : {
+      "id" : "anlozztwAyvqrOi7VOaG5$$qnQmin6lFbgilXUt5-yO1",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_rbkp_tbl_1",
+        "slug" : "ds_rbkp_tbl_1",
+        "x" : -640,
+        "y" : -180,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "EsXCGLmk1NVOrux1fj7UW$$Kez-QtjXzlJxWH6oWpg9x",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "xq8opnboZQ_u-kvMsonzU$$ey5jRH0f6XvUQKRCl_401" : {
+      "id" : "xq8opnboZQ_u-kvMsonzU$$ey5jRH0f6XvUQKRCl_401",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_silver_rseg_tbl",
+        "slug" : "ds_silver_rseg_tbl",
+        "x" : -320,
+        "y" : -20,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the DataFrame 'in0' as a Delta table named 'rseb_tbl' in the 'erp_silver' database, enabling efficient storage and querying of the data.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "i6whm3lc2GcMVRrcN_JC-$$5RHmzPJq4hM4V7Dc71dzH",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "O40repHd7FD9tkQTFNXDt$$RaiXWUkRusvyxGqvV60f0" : {
+      "id" : "O40repHd7FD9tkQTFNXDt$$RaiXWUkRusvyxGqvV60f0",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_silver_rbkp_tbl",
+        "slug" : "ds_silver_rbkp_tbl",
+        "x" : -340,
+        "y" : -180,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the input DataFrame as a Delta table named 'rbkp_tbl' in the 'erp_silver' database, providing a reliable and efficient storage solution for the data.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "bkwBLKtQS2wvF9Qi3aafB$$K4CWtOJcAleAXBJU_KJr9",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "CfMq1-0q46P2fghESLPgL$$NCraWsMhXpoS3wjitvsh8" : {
+      "id" : "CfMq1-0q46P2fghESLPgL$$NCraWsMhXpoS3wjitvsh8",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_bkpf_tbl",
+        "slug" : "ds_bkpf_tbl",
+        "x" : -760,
+        "y" : -340,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves a DataFrame as a Delta table named 'bkpf_tbl' in the 'erp_bronze' database, storing it in the 'dbfs:/mnt/HVR/bronze/bkpf_tbl' path.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "N8H8cZO5XSJPOzTInDsmI$$MvgI_FSXt9KcHVODS-Grf",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "xVSuGQvtPQuUlxwxR2_et$$u6XFz4dn34s-tLlWINdA9" : {
+      "id" : "xVSuGQvtPQuUlxwxR2_et$$u6XFz4dn34s-tLlWINdA9",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_bkpf_tbl_1",
+        "slug" : "ds_bkpf_tbl_1",
+        "x" : -660,
+        "y" : -340,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "-D9-cqBkKeCazDgauObdq$$i5YArGAPApNpgcSLx_4YL",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "mb0yWgB-KfJi0Hib9YNvJ$$QM-zKmR_KHq_XrU5v5Yta" : {
+      "id" : "mb0yWgB-KfJi0Hib9YNvJ$$QM-zKmR_KHq_XrU5v5Yta",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ref_silver_RBKP",
+        "slug" : "ref_silver_RBKP",
+        "x" : -480,
+        "y" : -180,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Extracts relevant columns from the input DataFrame, focusing on financial and transactional information.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "_MUJMZsX2-oZ_7iuJqpE7$$BfBPqLyVRe9fXRZg7526n",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doc_number"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fiscal_year"
+          },
+          "description" : ""
+        }, {
+          "target" : "client_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "client_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "reversal_doc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "reversal_doc_ind"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doc_curr_amt"
+          },
+          "description" : ""
+        }, {
+          "target" : "vendor_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "vendor_num"
+          },
+          "description" : ""
+        }, {
+          "target" : "company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "company_code"
+          },
+          "description" : ""
+        }, {
+          "target" : "amt_locl_currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "amt_locl_currency"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_amt_local_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tax_amt_local_curr"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tran_amt"
+          },
+          "description" : ""
+        }, {
+          "target" : "tax_category",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tax_category"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_fivetran_synced"
+          },
+          "description" : ""
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_loadtimestamp"
+          },
+          "description" : ""
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_filename"
+          },
+          "description" : ""
+        }, {
+          "target" : "_file_timestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_file_timestamp"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##amt_locl_currency", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##reversal_doc_ind", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##_file_timestamp", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##company_code", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##doc_number", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##vendor_num", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##_loadtimestamp", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##tax_category", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##tax_amt_local_curr", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##_fivetran_synced", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##doc_curr_amt", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##tran_amt", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##client_id", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##_filename", "vHMq_OOuVVhipuTrK5ZaK$$61-brVbLHF2duxDY7-sAG##fiscal_year" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "-Ja_e3zXJWqcZghDrh6Yp$$AbOeyDIUluQ5xALEybUmQ" : {
+      "id" : "-Ja_e3zXJWqcZghDrh6Yp$$AbOeyDIUluQ5xALEybUmQ",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_rseg_tbl",
+        "slug" : "ds_rseg_tbl",
+        "x" : -880,
+        "y" : -20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the input DataFrame as a Delta table named 'rseg_tbl' in the 'erp_bronze' database, allowing for efficient storage and querying of the data.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "vwuI_gPkJJonrdjrvZyLd$$uyxWIXeFIQRn6WBa9e_cf",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "uOV8aroRR46LT6MCgiWoF$$72M5cd15iaZpOUd0mcslA" : {
+      "id" : "uOV8aroRR46LT6MCgiWoF$$72M5cd15iaZpOUd0mcslA",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_stg_hvr_rbkp",
+        "slug" : "ds_stg_hvr_rbkp",
+        "x" : -1200,
+        "y" : -180,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Reads transaction data stored in the HVR directory and loads it into a DataFrame.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "QFaUSDvtMiFSdBaBMiS94$$MYfg52ThUjZ2O-sRAvkag",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "JAH7sSPq0gEgqk5DnP99h$$WjfFXIHK0foGU1RNTfcCF" : {
+      "id" : "JAH7sSPq0gEgqk5DnP99h$$WjfFXIHK0foGU1RNTfcCF",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_rseg_tbl_1",
+        "slug" : "ds_rseg_tbl_1",
+        "x" : -640,
+        "y" : -20,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ee7gd9pTNWVmwkjjerB7w$$fwL8fb6SAGDYYuX2qUCzL",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "VB9eYvYjz0C3xxhsIH-pe$$SqBB0ue9bC1afUCREjrLl" : {
+      "id" : "VB9eYvYjz0C3xxhsIH-pe$$SqBB0ue9bC1afUCREjrLl",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_silver_rseg_tbl_1",
+        "slug" : "ds_silver_rseg_tbl_1",
+        "x" : -140,
+        "y" : -60,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "LUU6ICHoceao8WCZbfKf-$$GvONCSQuzED-2G79LjxP3",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "BcSu7ET-tyzDLaw_C_Gl6$$F70lXqR3om_12sokNXxK3" : {
+      "id" : "BcSu7ET-tyzDLaw_C_Gl6$$F70lXqR3om_12sokNXxK3",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ref_silver_BKPF",
+        "slug" : "ref_silver_BKPF",
+        "x" : -500,
+        "y" : -340,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Extracts relevant fields from the BKPF table, including document number, user name, company code, fiscal year, client, posting date, document type, currency type, and file-related information.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "1XypeKspDAhpZxkAlTcsq$$QXwYy05FOga0D17cpu2rC",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doc_number"
+          },
+          "description" : ""
+        }, {
+          "target" : "user_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "user_name"
+          },
+          "description" : ""
+        }, {
+          "target" : "company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "company_code"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fiscal_year"
+          },
+          "description" : ""
+        }, {
+          "target" : "client",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "client"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_spl_post",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ind_spl_post"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doc_type"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_type2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "curr_type2"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_post_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tran_post_date"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_curr_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tran_curr_key"
+          },
+          "description" : ""
+        }, {
+          "target" : "post_date_month",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "post_date_month"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doc_date"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_fivetran_synced"
+          },
+          "description" : ""
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_loadtimestamp"
+          },
+          "description" : ""
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_filename"
+          },
+          "description" : ""
+        }, {
+          "target" : "_file_timestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_file_timestamp"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##user_name", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##curr_type2", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##company_code", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##_loadtimestamp", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##client", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##_file_timestamp", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##tran_curr_key", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##_filename", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##doc_type", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##doc_number", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##doc_date", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##tran_post_date", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##fiscal_year", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##post_date_month", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##_fivetran_synced", "TG_g_OJciIC2ClrUe2o18$$-5f0jk0q4kvdyKbw99C9W##ind_spl_post" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "RvtO4_c9PK5Q6iG-7odzn$$KT7VCA2plxKbl8wSVL3Vt" : {
+      "id" : "RvtO4_c9PK5Q6iG-7odzn$$KT7VCA2plxKbl8wSVL3Vt",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_silver_rbkp_tbl_1",
+        "slug" : "ds_silver_rbkp_tbl_1",
+        "x" : -140,
+        "y" : -200,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "dV_T4bo9ES7xttUt_A9u_$$9Zk7fB3CGUimVJx4GJt7D",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "IVv_cAWDz53OKP04vMviG$$5kTGYEAPp9jRm_wgehMgd" : {
+      "id" : "IVv_cAWDz53OKP04vMviG$$5kTGYEAPp9jRm_wgehMgd",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ref_silver_RSEG",
+        "slug" : "ref_silver_RSEG",
+        "x" : -480,
+        "y" : -20,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Extracts specific columns from the input DataFrame, focusing on relevant information related to document numbers, fiscal years, line item numbers, item quantities, plant codes, purchase order numbers, synchronization status, load timestamps, filenames, and file timestamps.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sr9emU9MpVpDOq-JC0yOm$$XwahfVSIVtI2wi1zja7S2",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "iTEYeqZ8XziLrZjAK9m5D$$aUfrrIfWsC5ohuxcP5oYP",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doc_number"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fiscal_year"
+          },
+          "description" : ""
+        }, {
+          "target" : "line_item_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "line_item_num"
+          },
+          "description" : ""
+        }, {
+          "target" : "item_quant",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "item_quant"
+          },
+          "description" : ""
+        }, {
+          "target" : "record_plant_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "record_plant_code"
+          },
+          "description" : ""
+        }, {
+          "target" : "purchase_ord_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "purchase_ord_num"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_fivetran_synced"
+          },
+          "description" : ""
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_loadtimestamp"
+          },
+          "description" : ""
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_filename"
+          },
+          "description" : ""
+        }, {
+          "target" : "_file_timestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_file_timestamp"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "sr9emU9MpVpDOq-JC0yOm$$XwahfVSIVtI2wi1zja7S2##doc_number", "sr9emU9MpVpDOq-JC0yOm$$XwahfVSIVtI2wi1zja7S2##line_item_num", "sr9emU9MpVpDOq-JC0yOm$$XwahfVSIVtI2wi1zja7S2##_file_timestamp", "sr9emU9MpVpDOq-JC0yOm$$XwahfVSIVtI2wi1zja7S2##_loadtimestamp", "sr9emU9MpVpDOq-JC0yOm$$XwahfVSIVtI2wi1zja7S2##fiscal_year", "sr9emU9MpVpDOq-JC0yOm$$XwahfVSIVtI2wi1zja7S2##record_plant_code", "sr9emU9MpVpDOq-JC0yOm$$XwahfVSIVtI2wi1zja7S2##_filename", "sr9emU9MpVpDOq-JC0yOm$$XwahfVSIVtI2wi1zja7S2##item_quant", "sr9emU9MpVpDOq-JC0yOm$$XwahfVSIVtI2wi1zja7S2##purchase_ord_num", "sr9emU9MpVpDOq-JC0yOm$$XwahfVSIVtI2wi1zja7S2##_fivetran_synced" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "N71kgUT9pwSkoejK7CtR2$$0MpcZ8s8dBuNcY9nZ_RJg" : {
+      "id" : "N71kgUT9pwSkoejK7CtR2$$0MpcZ8s8dBuNcY9nZ_RJg",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_stg_hvr_rseg",
+        "slug" : "ds_stg_hvr_rseg",
+        "x" : -1200,
+        "y" : -20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Reads transaction data from a Parquet file and returns it as a DataFrame.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "0p0SrMmodS0j7h6OOPOOK$$gIJnVVgNthPCqrsUkPrmi",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "2RZ2-tOH0haqvPhn1lQGO$$fkHilVlgYPT3G5VHo9PMG" : {
+      "id" : "2RZ2-tOH0haqvPhn1lQGO$$fkHilVlgYPT3G5VHo9PMG",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ref_BKPF",
+        "slug" : "ref_BKPF",
+        "x" : -1060,
+        "y" : -340,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Transforms and standardizes various document-related fields for better readability and analysis.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "_uVxc8v0xGHvsGKpJ45P9$$U3cshNgPDyeCi6CRYCcII",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "belnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "company_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bukrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gjahr"
+          },
+          "description" : ""
+        }, {
+          "target" : "client",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "mandt"
+          },
+          "description" : ""
+        }, {
+          "target" : "due_date_flag",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "duefl"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_spl_lot",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lotkz"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stjah"
+          },
+          "description" : ""
+        }, {
+          "target" : "hdr_refkey2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xref2_hd"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_blind_post",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "blind"
+          },
+          "description" : ""
+        }, {
+          "target" : "amt_local_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kzkrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_spl_post",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "basw3"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_doc_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xrueb"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kurst"
+          },
+          "description" : ""
+        }, {
+          "target" : "arch_obj_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "arcid"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_reorg",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xreorg"
+          },
+          "description" : ""
+        }, {
+          "target" : "clear_ref_doc_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stblg"
+          },
+          "description" : ""
+        }, {
+          "target" : "acc_no_doc_posted",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "knumv"
+          },
+          "description" : ""
+        }, {
+          "target" : "time_last_doc_change",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cputm"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_credit_ctrl_area",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ccins"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "blart"
+          },
+          "description" : ""
+        }, {
+          "target" : "int_tran_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "intdate"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_tran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "basw2"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_split_tran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xsplit"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_block_tran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ssblk"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_doc_no_tran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rldnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_tax_calc",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xmwst"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_doc_reversal",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "glvor"
+          },
+          "description" : ""
+        }, {
+          "target" : "key_group_clear",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ldgrp"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_curr_trran",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kzwrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_val_adjust",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "wwert"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_type3",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "curt3"
+          },
+          "description" : ""
+        }, {
+          "target" : "bus_tran_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bvorg"
+          },
+          "description" : ""
+        }, {
+          "target" : "branch_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "brnch"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_exch_rate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ctxkrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "date_last_change",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cpudt"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_penalty_rate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "penrc"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_conv_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kuty3"
+          },
+          "description" : ""
+        }, {
+          "target" : "usr_spec_tran_var",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xusvr"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_tran_reversal",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xreversal"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_comp_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fikrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "prop_mgmt_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "propmano"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_reenf_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "reindat"
+          },
+          "description" : ""
+        }, {
+          "target" : "ref_doc_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xblnr"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_type2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "curt2"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_post_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "budat"
+          },
+          "description" : ""
+        }, {
+          "target" : "ind_tax__withholding",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xwvof"
+          },
+          "description" : ""
+        }, {
+          "target" : "condition_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kuty2"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_conv_exch_rate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kur2x"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_num_clearingdoc",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "dbblg"
+          },
+          "description" : ""
+        }, {
+          "target" : "aseet_tran_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "awtyp"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_curr_conv3",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kurs3"
+          },
+          "description" : ""
+        }, {
+          "target" : "auto_pay_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ausbk"
+          },
+          "description" : ""
+        }, {
+          "target" : "offset_ref_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "offset_refer_dat"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_post_time",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psotm"
+          },
+          "description" : ""
+        }, {
+          "target" : "net_post_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xsnet"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_post_text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psobt"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_curr2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kurs2"
+          },
+          "description" : ""
+        }, {
+          "target" : "offset_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "offset_status"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_header_txt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bktxt"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_group_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "grpid"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "awkey"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_post_dt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stodt"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_internal_form",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "intform"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_key3",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "hwae3"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_addl_info",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "adisc"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_curr_key",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "hwaer"
+          },
+          "description" : ""
+        }, {
+          "target" : "local_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psozl"
+          },
+          "description" : ""
+        }, {
+          "target" : "group_curr_amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psosg"
+          },
+          "description" : ""
+        }, {
+          "target" : "post_date_month",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "monat"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_sampling_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sampled"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_category",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "doccat"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_last_upd_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "upddt"
+          },
+          "description" : ""
+        }, {
+          "target" : "document_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "dokid"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_key_local2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "hwae2"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_code_doc",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "tcode"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_trancurr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "txkrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "partial_clear_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psoak"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_post_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psodt"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "waers"
+          },
+          "description" : ""
+        }, {
+          "target" : "alt_doc_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xblnr_alt"
+          },
+          "description" : ""
+        }, {
+          "target" : "head_ref1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xref1_hd"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_gen_sysname",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "awsys"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_forgn_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kursf"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_resubmit_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "resubmission"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_local_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kursx"
+          },
+          "description" : ""
+        }, {
+          "target" : "vat_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "vatdate"
+          },
+          "description" : ""
+        }, {
+          "target" : "grouping_batch_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "batch"
+          },
+          "description" : ""
+        }, {
+          "target" : "tran_followon_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "follow_on"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_type_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "iblar"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bstat"
+          },
+          "description" : ""
+        }, {
+          "target" : "fin_mgmt_field_us",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "fm_umart"
+          },
+          "description" : ""
+        }, {
+          "target" : "fin_mgmt_field_st",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "stgrd"
+          },
+          "description" : ""
+        }, {
+          "target" : "supplier_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sname"
+          },
+          "description" : ""
+        }, {
+          "target" : "doc_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bldat"
+          },
+          "description" : ""
+        }, {
+          "target" : "cash_alloc_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cash_alloc"
+          },
+          "description" : ""
+        }, {
+          "target" : "spl_gl_tran_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "umrd3"
+          },
+          "description" : ""
+        }, {
+          "target" : "post_status_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psoks"
+          },
+          "description" : ""
+        }, {
+          "target" : "num_of_pages",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "numpg"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_foreign_curr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "frath"
+          },
+          "description" : ""
+        }, {
+          "target" : "cash_mgmt_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xmca"
+          },
+          "description" : ""
+        }, {
+          "target" : "payment_part_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ppnam"
+          },
+          "description" : ""
+        }, {
+          "target" : "credit_card_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ccnum"
+          },
+          "description" : ""
+        }, {
+          "target" : "user_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "usnam"
+          },
+          "description" : ""
+        }, {
+          "target" : "reversal_ind",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xstov"
+          },
+          "description" : ""
+        }, {
+          "target" : "payment_order_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psofn"
+          },
+          "description" : ""
+        }, {
+          "target" : "type_ofPosting",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "psoty"
+          },
+          "description" : ""
+        }, {
+          "target" : "curr_conv_rate2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "umrd2"
+          },
+          "description" : ""
+        }, {
+          "target" : "exch_rate_conv3",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "kur3x"
+          },
+          "description" : ""
+        }, {
+          "target" : "_sapf15_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_sapf15_status"
+          },
+          "description" : ""
+        }, {
+          "target" : "net_bal_aft_post",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "xnetb"
+          },
+          "description" : ""
+        }, {
+          "target" : "entry_exclude_flag",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "exclude_flag"
+          },
+          "description" : ""
+        }, {
+          "target" : "entry_subset",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "subset"
+          },
+          "description" : ""
+        }, {
+          "target" : "entry_last_change_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "aedat"
+          },
+          "description" : ""
+        }, {
+          "target" : "hvr_change_time",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CAST(\r\n    CONCAT(\r\n      SUBSTRING(hvr_change_time, 1, 4), \r\n      SUBSTRING(hvr_change_time, 6, 2), \r\n      SUBSTRING(hvr_change_time, 9, 2), \r\n      SUBSTRING(hvr_change_time, 12, 2), \r\n      SUBSTRING(hvr_change_time, 15, 2), \r\n      SUBSTRING(hvr_change_time, 18, 2) \r\n    ) AS LONG\r\n)"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_deleted",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_fivetran_deleted"
+          },
+          "description" : ""
+        }, {
+          "target" : "_fivetran_synced",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_format(_fivetran_synced, 'yyyy-MM-dd HH:mm:ss')"
+          },
+          "description" : ""
+        }, {
+          "target" : "_loadtimestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_format(current_timestamp(), 'yyyy-MM-dd HH:mm:ss')"
+          },
+          "description" : ""
+        }, {
+          "target" : "_filename",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "split(input_file_name(), '/')[4]"
+          },
+          "description" : ""
+        }, {
+          "target" : "_file_timestamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CAST(SUBSTRING(split(input_file_name(), '/')[4], 1, 14) AS LONG)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "doc_number,belnr\ncompany_code,bukrs\nfiscal_year,gjahr\nclient,mandt\ndue_date_flag,duefl\nind_spl_lot,lotkz\ndoc_fiscal_year,stjah\nhdr_refkey2,xref2_hd\nind_blind_post,blind\namt_local_curr,kzkrs\nind_spl_post,basw3\nref_doc_number,xrueb\nexch_rate_type,kurst\narch_obj_id,arcid\nind_reorg,xreorg\nclear_ref_doc_no,stblg\nacc_no_doc_posted,knumv\ntime_last_doc_change,cputm\nind_credit_ctrl_area,ccins\ndoc_type,blart\nint_tran_date,intdate\nind_tran,basw2\nind_split_tran,xsplit\nind_block_tran,ssblk\nref_doc_no_tran,rldnr\nind_tax_calc,xmwst\nind_doc_reversal,glvor\nkey_group_clear,ldgrp\nind_curr_trran,kzwrs\nind_val_adjust,wwert\ncurr_type3,curt3\nbus_tran_type,bvorg\nbranch_code,brnch\ncurr_exch_rate,ctxkrs\ndate_last_change,cpudt\ntran_penalty_rate,penrc\ncurr_conv_type,kuty3\nusr_spec_tran_var,xusvr\nind_tran_reversal,xreversal\ntran_comp_code,fikrs\nprop_mgmt_num,propmano\ntran_reenf_date,reindat\nref_doc_num,xblnr\ncurr_type2,curt2\ntran_post_date,budat\nind_tax__withholding,xwvof\ncondition_type,kuty2\ncurr_conv_exch_rate,kur2x\ndoc_num_clearingdoc,dbblg\naseet_tran_type,awtyp\nexch_rate_curr_conv3,kurs3\nauto_pay_ind,ausbk\noffset_ref_date,offset_refer_dat\ndoc_post_time,psotm\nnet_post_ind,xsnet\ndoc_post_text,psobt\nexch_rate_curr2,kurs2\noffset_status,offset_status\ndoc_header_txt,bktxt\ndoc_group_id,grpid\ndoc_key,awkey\ndoc_post_dt,stodt\ndoc_internal_form,intform\ncurr_key3,hwae3\ndoc_addl_info,adisc\ntran_curr_key,hwaer\nlocal_curr_amt,psozl\ngroup_curr_amt,psosg\npost_date_month,monat\ntran_sampling_ind,sampled\ndoc_category,doccat\ndoc_last_upd_date,upddt\ndocument_id,dokid\ncurr_key_local2,hwae2\ntran_code_doc,tcode\nexch_rate_trancurr,txkrs\npartial_clear_ind,psoak\ndoc_post_date,psodt\ntran_curr,waers\nalt_doc_num,xblnr_alt\nhead_ref1,xref1_hd\ndoc_gen_sysname,awsys\nexch_rate_forgn_curr,kursf\ndoc_resubmit_ind,resubmission\nexch_rate_local_curr,kursx\nvat_date,vatdate\ngrouping_batch_num,batch\ntran_followon_ind,follow_on\ndoc_type_ind,iblar\ndoc_status,bstat\nfin_mgmt_field_us,fm_umart\nfin_mgmt_field_st,stgrd\nsupplier_name,sname\ndoc_date,bldat\ncash_alloc_ind,cash_alloc\nspl_gl_tran_ind,umrd3\npost_status_ind,psoks\nnum_of_pages,numpg\nexch_rate_foreign_curr,frath\ncash_mgmt_ind,xmca\npayment_part_name,ppnam\ncredit_card_num,ccnum\nuser_name,usnam\nreversal_ind,xstov\npayment_order_num,psofn\ntype_ofPosting,psoty\ncurr_conv_rate2,umrd2\nexch_rate_conv3,kur3x\n_sapf15_status,_sapf15_status\nnet_bal_aft_post,xnetb\nentry_exclude_flag,exclude_flag\nentry_subset,subset\nentry_last_change_date,aedat\n_fivetran_deleted,_fivetran_deleted\n_fivetran_synced,``date_format(_fivetran_synced, 'yyyy-MM-dd HH:mm:ss')``\n_loadtimestamp,``date_format(current_timestamp(), 'yyyy-MM-dd HH:mm:ss')``\n_filename,``split(input_file_name(), '/')[4]``\n_file_timestamp,``SUBSTRING(split(input_file_name(), '/')[4], 1, 14)``",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##bldat", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##bvorg", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xstov", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##dbblg", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##stodt", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##penrc", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xmwst", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##psotm", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##hwae2", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##tcode", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##arcid", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##basw2", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##kurs2", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##grpid", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xusvr", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##stblg", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xblnr_alt", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##fm_umart", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##doccat", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##propmano", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##_fivetran_deleted", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##blind", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xsnet", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##bstat", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xref1_hd", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##bktxt", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##intdate", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##ccnum", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##kur3x", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##_sapf15_status", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##gjahr", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##ccins", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##curt3", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##cash_alloc", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xblnr", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##kurs3", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##hvr_change_time", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##hwaer", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##numpg", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##kzkrs", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##stgrd", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##kursx", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##kuty3", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##aedat", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##basw3", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##kursf", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##cpudt", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##belnr", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##adisc", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##awkey", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##iblar", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##exclude_flag", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##offset_refer_dat", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##usnam", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##wwert", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xmca", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##glvor", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xwvof", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##psoak", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##psofn", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##batch", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##budat", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##awtyp", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##fikrs", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##hwae3", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##mandt", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##ausbk", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##kuty2", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##knumv", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##psozl", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##kurst", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##umrd3", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##sname", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##frath", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xrueb", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##blart", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##sampled", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##intform", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xreorg", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##lotkz", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##curt2", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##follow_on", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##stjah", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##ssblk", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##_fivetran_synced", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##ldgrp", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##umrd2", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##ppnam", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##awsys", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##rldnr", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##waers", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##vatdate", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##reindat", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##ctxkrs", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##bukrs", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##kur2x", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##monat", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##psodt", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##offset_status", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##psoks", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##kzwrs", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xreversal", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##dokid", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##txkrs", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##brnch", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##duefl", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##cputm", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xsplit", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xnetb", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##psobt", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##resubmission", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##upddt", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##xref2_hd", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##subset", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##psosg", "IXPhjh70JvIq2FJVFKNRp$$cu1HHyx60bAifsQt2fxPV##psoty" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.N71kgUT9pwSkoejK7CtR2$$0MpcZ8s8dBuNcY9nZ_RJg.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.Lmp9C387H9vxy8dUP2OWz$$By14XWM5dIKOZBRsG5jfh",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Reformat",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.OqUrOqsVbHWHHsyxpn7Z7$$Ci8zUWOALYCc-ynQMFeZL.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.uOV8aroRR46LT6MCgiWoF$$72M5cd15iaZpOUd0mcslA.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.5JunAj4Hg2_8LYJJWErmA$$l5zCanQWen8G25Jjfnlrr",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Reformat",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.N3-Nv65hm6cua2BvY66pO$$ObHiZWhq4tW-eW3rCCPKp",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.N3-Nv65hm6cua2BvY66pO$$ObHiZWhq4tW-eW3rCCPKp.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.2RZ2-tOH0haqvPhn1lQGO$$fkHilVlgYPT3G5VHo9PMG",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Reformat",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.nzyNkDz8Bz0bclwLVRTNt$$AjHw00KCcl7qN6n8L7qOk",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Filter",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.CfMq1-0q46P2fghESLPgL$$NCraWsMhXpoS3wjitvsh8",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.CfMq1-0q46P2fghESLPgL$$NCraWsMhXpoS3wjitvsh8.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.-Ja_e3zXJWqcZghDrh6Yp$$AbOeyDIUluQ5xALEybUmQ",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.-Ja_e3zXJWqcZghDrh6Yp$$AbOeyDIUluQ5xALEybUmQ.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.xVSuGQvtPQuUlxwxR2_et$$u6XFz4dn34s-tLlWINdA9.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.BcSu7ET-tyzDLaw_C_Gl6$$F70lXqR3om_12sokNXxK3",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Reformat",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.9emEvFROdp-wGLAEY2Awt$$3s8CCXSbHDqROVDMkyNJb",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.9emEvFROdp-wGLAEY2Awt$$3s8CCXSbHDqROVDMkyNJb.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.anlozztwAyvqrOi7VOaG5$$qnQmin6lFbgilXUt5-yO1.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.JAH7sSPq0gEgqk5DnP99h$$WjfFXIHK0foGU1RNTfcCF.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.IVv_cAWDz53OKP04vMviG$$5kTGYEAPp9jRm_wgehMgd",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Reformat",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.xq8opnboZQ_u-kvMsonzU$$ey5jRH0f6XvUQKRCl_401",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.xq8opnboZQ_u-kvMsonzU$$ey5jRH0f6XvUQKRCl_401.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.mb0yWgB-KfJi0Hib9YNvJ$$QM-zKmR_KHq_XrU5v5Yta",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Reformat",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.O40repHd7FD9tkQTFNXDt$$RaiXWUkRusvyxGqvV60f0",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.O40repHd7FD9tkQTFNXDt$$RaiXWUkRusvyxGqvV60f0.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.TTDCyIfexqKIAM3CUQO3f$$stgTPufr8WixdRbFl4GzV.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.RvtO4_c9PK5Q6iG-7odzn$$KT7VCA2plxKbl8wSVL3Vt.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.VB9eYvYjz0C3xxhsIH-pe$$SqBB0ue9bC1afUCREjrLl.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.TauTOgUMbnmRchnCdHMAO$$oMwckgAvRxVazAGzcfOLx",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for Join",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.WqkbE4NfORCMflHr4Qugu$$BSdm-myjXOI-Ru7K47I8W",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.WqkbE4NfORCMflHr4Qugu$$BSdm-myjXOI-Ru7K47I8W.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.EgNPVKSNesDS4nhe7LK3w$$8r54m7Iqcd0eSVnS5TqCJ",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.EgNPVKSNesDS4nhe7LK3w$$8r54m7Iqcd0eSVnS5TqCJ.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
+}
