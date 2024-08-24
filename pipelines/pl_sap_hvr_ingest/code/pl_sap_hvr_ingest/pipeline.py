@@ -8,6 +8,20 @@ from pl_sap_hvr_ingest.graph import *
 
 def pipeline(spark: SparkSession) -> None:
     update_max_timestamps(spark)
+    df_ref_BKPF = ref_BKPF(spark)
+    df_ref_RSEG = ref_RSEG(spark)
+    df_filter_data_2 = filter_data_2(spark, df_ref_RSEG)
+    df_filter_data = filter_data(spark, df_ref_BKPF)
+    df_ref_RBKP = ref_RBKP(spark)
+    df_filter_data_1 = filter_data_1(spark, df_ref_RBKP)
+    df_join_documents = join_documents(spark)
+    df_filter_by_timestamp_comparison = filter_by_timestamp_comparison(spark, df_join_documents)
+    df_ref_silver_RSEG = ref_silver_RSEG(spark)
+    df_filter_by_max_timestamp_1 = filter_by_max_timestamp_1(spark, df_ref_silver_RSEG)
+    df_ref_silver_RBKP = ref_silver_RBKP(spark)
+    df_filter_by_max_timestamp = filter_by_max_timestamp(spark, df_ref_silver_RBKP)
+    df_ref_silver_BKPF = ref_silver_BKPF(spark)
+    df_filter_by_maxtsp_bkpf = filter_by_maxtsp_bkpf(spark, df_ref_silver_BKPF)
 
 def main():
     spark = SparkSession.builder\
